@@ -1,0 +1,52 @@
+body {
+  overflow-X: hidden;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #013654;
+}
+
+.first_section {
+  display: flex;
+  list-style: none;
+}
+
+.fs-left-con {
+  margin-top: 30px;
+  width: 45%;
+}
+
+#fs-title {
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.fs-left-btn-con {
+  margin-top: 40px;
+}
+
+.fs-play-icon-btn {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+.fs-right-con {
+  position: relative;
+  width: 55%;
+}
+
+.fs-style-line-con {
+  position: absolute;
+  bottom: 0;
+  transform: rotateZ(-145deg) translate(130px, -80px);
+}
+
+#fs-animation {
+  margin-left: 40px;
+  width: 84%;
+  height: 100%;
+}
+
+.fs-extra-margin {
+  margin-left: 20px;
+}/*# sourceMappingURL=globals.css.map */
