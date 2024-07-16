@@ -1,0 +1,115 @@
+$yellow: #FEDE66;
+$blue: #0091EA;
+$black: #013654;
+$green: #00C853;
+$red: #D50000;
+$dark: #FAFAFA;
+$light_blue: #70C0F1;
+
+
+
+.timeline-main-con {
+    background-color: $dark;
+    margin-top:140px;
+    margin-bottom: 200px;
+    list-style: none;
+    padding:0;
+    padding-bottom: 50px;
+    .timeline-title-con{
+        display:flex;
+        justify-content: center;
+        #timeline-title{
+            margin:75px;
+            font-size: 45px;
+            font-weight: 550;
+            width:550px;
+            letter-spacing: 0.15px;
+        }
+    }
+}
+.timeline-content-con {
+    position: relative;
+    list-style: none;
+    padding:0;
+    display:flex;
+}
+
+.timeline-content-text-con {
+    list-style: none;
+    padding: 0;
+    width:100%;
+    margin-left:87px;
+}
+
+.timeline-content-text {
+    display:inline-block;
+    margin-top:250px;
+    h1 {
+        font-size: 47px;
+        font-weight: 550;
+        letter-spacing: 0.25px;
+        width:350px
+    }
+    p {
+        width:400px;
+    }
+}
+.timeline-img-con {
+    position:sticky;
+    top:100px;
+    list-style: none;
+    padding:0;
+    width:550px;
+    height:300px;
+    display:inline-block;
+    margin-left:30px;
+}
+.timeline-img-element {
+    position: absolute;
+    transition: all 300ms ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+.timeline-h1-text {
+    margin:0;
+}
+.timeline-middle-line-con {
+    position: relative;
+    width:5px;
+    background-image: linear-gradient(to bottom, $light_blue, $light_blue, hsl(203, 70%, 83%));
+    height:1180px;
+    margin-left:380px;
+    margin-top:70px;
+}
+.timeline-middle-line-block {
+    position:absolute;
+    width:12px;
+    height:12px;
+    border-radius: 50%;
+    background-color: $blue;
+}
+.timeline-top-block {
+    top:-5px;
+    right:-5px;
+}
+.timeline-middle-block {
+    top:43%;
+    right:-5px;
+}
+.timeline-last-block {
+    background-color: hsl(203, 70%, 83%);
+    bottom:25px;
+    right:-5px;
+}
+
+
+.timeline-first-text-con {
+    margin-top:0;
+}
+
+/* ADD ON */
+
+.display {
+    opacity: 1;
+    visibility: visible;
+}

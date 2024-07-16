@@ -1,0 +1,26 @@
+.techIntegrations-main-con {
+    margin-top:80px;
+}
+.techIntegrations-con {
+    display:flex;
+    list-style: none;
+}
+.techIntegrations-info-con {
+    width:50%;
+    padding:80px;
+    padding-left: 80px;
+    h2 {
+        width:300px;
+        font-size:35px;
+        font-weight: 600;
+    }
+    p {
+        width:300px;
+        margin-bottom:30px;
+    }
+}
+.techIntegrations-img-con {
+    position:relative;
+    width:100%;
+    right:0;
+}

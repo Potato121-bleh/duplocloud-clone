@@ -1,0 +1,39 @@
+
+
+.slideshow-main-con {
+    list-style: none;
+    padding:0;
+}
+#slideshow-top-title {
+    font-weight: 500;
+    letter-spacing: 0.15px;
+}
+.slideshow-top-title-con {
+    display: flex;
+    justify-content: center;
+    margin:0;
+    width:100%;
+}
+.slideshow-top-title-subcon {
+    width:800px;
+}
+.slideshow-img-con {
+    width:100%;
+}
+.slideshow-img-4scroll {
+    display:flex;
+    list-style: none;
+    padding:0;
+    animation: move_company 25s infinite;
+    animation-timing-function: linear;
+}
+.slideshow-img-box {
+    margin:50px;
+}
+.slideshow-first-img {
+    margin-left:200px;
+}
+
+@keyframes move_company {
+    to{transform: translateX(-100%);}
+}

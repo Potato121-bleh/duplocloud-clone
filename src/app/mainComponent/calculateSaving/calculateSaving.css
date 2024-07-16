@@ -1,0 +1,38 @@
+.calculateSaving-main-con {
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.calculateSaving-con {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.calculateSaving-title {
+  width: 700px;
+  font-size: 35px;
+  font-weight: 550;
+  text-align: center;
+}
+
+.calculateSaving-desc-con {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.calculateSaving-desc {
+  text-align: center;
+  width: 550px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.calculateSaving-btn-con {
+  display: inline-block;
+  text-align: center;
+}/*# sourceMappingURL=calculateSaving.css.map */

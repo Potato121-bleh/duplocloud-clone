@@ -1,0 +1,72 @@
+.solutionCard-title-con {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    .solutionCard-title {
+        width:650px;
+        font-size: 35px;
+    }
+}
+.solutionCard-card-con {
+    display:flex;
+    flex-wrap: wrap;
+}
+.solutionCard-card-child {
+    padding:35px;
+    padding-left:45px;
+    list-style: none;
+    width:460px;
+    border-radius: 15px;
+    margin:15px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    background-image: linear-gradient(to top right, #0088DD, #013457);
+    h3{
+        font-size:25px;
+        color:white;
+        margin-top:5px;
+        margin-bottom:10px;
+    }
+    p{
+        width:400px;
+        color:white;
+        margin-bottom:20px;
+    }
+}
+.solutionCard-card-child:hover {
+    animation:fadeColor 0.2s forwards ease-in-out;
+    border: solid 1px;
+    transform: scale(1.03);
+    h3{color:black;}
+    p{color:black;}
+}
+
+.solutionCard-btn-con {
+    margin-bottom:10px;
+}
+
+
+@keyframes fadeColor {
+    20%{background-image: linear-gradient(to top right, #2797dd, #0b4063);}
+    40%{background-image: linear-gradient(to top right, #4ca5dc, #22587c);}
+    60%{background-image: linear-gradient(to top right, #70b0d8, #507d9b);}
+    80%{background-image: linear-gradient(to top right, #9dc8e2, #86a9c1);}
+    100%{background-image: linear-gradient(to top right, #ffffff, #ffffff);}
+}
+@keyframes fadeColorin {
+    20%{background-image: linear-gradient(to top right, #9dc8e2, #86a9c1);}
+    40%{background-image: linear-gradient(to top right, #70b0d8, #507d9b);}
+    60%{background-image: linear-gradient(to top right, #4ca5dc, #22587c);}
+    80%{background-image: linear-gradient(to top right, #2797dd, #0b4063);}
+    100%{background-image: linear-gradient(to top right, #0088DD, #013457);}
+}
+
+
+.fadeColor {
+    animation:fadeColor 0.2s forwards ease-in-out;
+    h3{color:black;}
+    p{color:black;}
+}
+.fadeColorin {
+    animation: fadeColorin 0.2s forwards ease-in-out
+}

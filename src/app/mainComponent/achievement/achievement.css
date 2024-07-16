@@ -1,0 +1,83 @@
+.achievement-main-con {
+  background-image: linear-gradient(to left, #01426D, #0091EA);
+  height: 700px;
+  margin-top: 180px;
+}
+
+.achievement-con {
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.achievement-text-con {
+  padding-top: 80px;
+  display: grid;
+  place-items: center;
+}
+
+.achievement-text {
+  color: white;
+  width: 600px;
+  text-align: center;
+}
+.achievement-text h1 {
+  font-size: 35px;
+}
+.achievement-text p {
+  margin-bottom: 30px;
+}
+
+.achievement-card {
+  list-style: none;
+  padding: 0;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.achievement-child {
+  width: 240px;
+  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.achievement-bottom-con {
+  color: black;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.achievement-bottom-con h1 {
+  font-size: 45px;
+  display: inline-block;
+  margin: 0;
+}
+.achievement-bottom-con p {
+  width: 130px;
+  margin: 0;
+}
+
+.achievement-img-con {
+  display: inline-block;
+  transform: translateY(-5px);
+}
+
+.achievement-reward-con {
+  position: absolute;
+  top: -100px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.achievement-reward-subcon {
+  list-style: none;
+  width: 800px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=achievement.css.map */

@@ -1,0 +1,260 @@
+$h2_font: 16px;
+$dd_subchild-font: 20px;
+
+.navbar-main-con{
+    list-style: none;
+    margin:0;
+    padding:0;
+    height:80px;
+    min-height:80px;
+    display:flex;
+    justify-content:space-between;
+}
+.navbar-logo-con {
+    text-align: center;
+    display:flex;
+    align-items: center;
+    margin-left:5px;
+}
+#logo {
+    width:50px;
+    height:50px;
+}
+#logo-title {font-size: 28px; margin-left:10px; color:#013654}
+
+.navbar-list-con {
+    display:flex;
+    padding:0;
+    font-size: $h2_font;
+    list-style: none;
+    align-items: center;
+}
+.navbar-list-child {
+    display:flex;
+    align-items: center;
+    margin-left:20px;
+    margin-right: 20px;
+    height:30px;
+    padding-left: 11px;
+    padding-right: 11px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.navbar-list-child:hover {background-color: #E5F1FD;}
+.navbar-p {margin:0; color:#386179}
+.navbar-first-child {margin-left:0;}
+.navbar-last-child {margin-right:0;}
+.navbar-arrow-icon {
+    margin-left:8px;
+    width:13px;
+    height:13px;
+    color: #0091EA;
+}
+.navbar-demo-con {
+    display:flex;
+    align-items: center;
+    margin-right:12px;
+}
+.navbar-btn {
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    font-size: $h2_font - 1;
+    background-color: #00C853;
+    color: black;
+    padding:15px;
+    padding-left:20px;
+    padding-right:20px;
+    cursor: pointer;
+}
+
+/* SUBCHILD FOR PLATFORM */
+
+.navbar-subchild-con {
+    position:absolute;
+    display:flex;
+    padding:30px;
+    padding-right:0;
+    top:90px;
+    list-style: none;
+    width:72%;
+    opacity: 0;
+    visibility: hidden;
+    cursor:default;
+    border-image: linear-gradient(to top right, #0091EA, #7B95A4);
+    border: solid 1px;
+    transition: all 400ms ease-in-out;
+    background-color: white;
+    z-index: 1;
+}
+.navbar-subchild-element1 {
+    padding:0;
+    list-style: none;
+}
+#feature-icon {
+    width:23px;
+    height:23px;
+}
+.navbar-subchild-header {
+    display:flex;
+    align-items: center;
+    list-style: none;
+    padding:0;
+    margin-left:14px;
+}
+.navbar-list-subchild-header-title {
+    font-size: 14px;
+    margin:0;
+    margin-left:10px;
+}
+.navbar-subchild-left-con {
+    margin-left:30px;
+}
+.navbar-subchild-leftelement-con1 {
+    display:flex;
+}
+.navbar-subchild-text-con {
+    margin-top:10px;
+    border-radius: 5px;
+    width:90%;
+    height:52px;
+    padding:7px;
+    padding-left:15px;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+.navbar-subchild-text-con:hover {
+    background-color: #E5F4FD;
+}
+.navbar-subchild-title {
+    font-size: 14px;
+    margin:0;
+    font-weight: 500;
+}
+.navbar-subchild-description {
+    margin:0;
+    font-size: 10px;
+    font-weight: 500;
+    margin-top:8px;
+    color:#666666;
+}
+.second {margin-top:2px;}
+
+.navbar-subchild-element2 {
+    list-style: none;
+}
+
+.navbar-subchild-right-con {
+    width:100%;
+}
+
+.navbar-list-child:hover .navbar-subchild-con {
+    opacity: 1;
+    visibility:visible;
+}
+.navbar-subchild-con:hover {
+    display:flex;
+}
+.subchild-right {
+    width:330px;
+}
+.subchild-left {
+    width:280px;
+}
+.subchild-hard-right {
+    width:100%;
+}
+
+/* SUBCHILD FOR USE CASES */
+
+.subchild-u {
+    opacity: 0;
+    visibility: hidden;
+    right:20px;
+}
+.navbar-list-child:hover .subchild-u {
+    opacity: 1;
+    visibility:visible;
+}
+.navbar-subchild-headerleft {
+    display:flex;
+    align-items: center;
+    width: 46%;
+}
+.navbar-subchild-headerright {
+    margin-left:3px;
+    display:flex;
+    align-items: center;
+}
+.navbar-subchild-block-con {
+    display:flex;
+    align-items: center;
+}
+.navbar-subchild-block-con:hover #navbar-icon{
+    background-color: #0091EA;
+}
+#navbar-icon {
+    border-radius: 5px;
+    background-color: #7B95A4;
+    padding:5px;
+    width:40px;
+    height:35px;
+    transition: all 300ms ease-in-out;
+}
+
+
+
+.navbar-subchild-text-con-block {
+    height:46px;
+    width:70%;
+    padding:3px;
+    margin-top:15px;
+    background-color: #F4F4F4;
+    border: solid #0091EA 1px;
+}
+.aws {
+    margin-left:20px;
+    font-size: 13px;
+}
+
+/* SUBCHILD FOR WHY DUP */
+
+.subchild-w {
+    opacity: 0;
+    visibility: hidden;
+    width:52%;
+    right:20px;
+}
+.navbar-subchild-last-text-con {
+    margin-top:10px;
+    border-radius: 5px;
+    width:90%;
+    padding:7px;
+    padding-left:15px;
+    transition: all 300ms ease-in-out;
+    cursor: pointer
+}
+.navbar-subchild-last-text-con:hover {
+    background-color: #E5F4FD;
+}
+.navbar-subchild-last-txt {
+    font-size:13px;
+    color:#009AEF;
+    margin:0
+}
+
+/* SUBCHILD FOR RESOURCE */
+.subchild-r {
+    right:20px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navbar-list-child:hover .subchild-r {
+    opacity: 1;
+    visibility:visible;
+}
+
+/* ADD ON */
+.changecolor-title {color:#009AEF}
