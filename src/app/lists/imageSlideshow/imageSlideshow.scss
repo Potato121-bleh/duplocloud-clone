@@ -15,6 +15,7 @@
     width:100%;
 }
 .slideshow-top-title-subcon {
+    text-align: center;
     width:800px;
 }
 .slideshow-img-con {
@@ -36,4 +37,20 @@
 
 @keyframes move_company {
     to{transform: translateX(-100%);}
+}
+
+
+@media (max-width: 1270px) {
+    #slideshow-top-title {
+        font-size: 2em;
+    }
+    .slideshow-img-box {
+        margin: 45px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .slideshow-img-box {
+        margin:30px;
+    }
 }

@@ -1,19 +1,17 @@
 import Image from 'next/image'
-import './component/buttonTemplate/button.css'
 import { faPlay } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import ButtonTemplate from './component/buttonTemplate/ButtonTemplate'
-import Line from './component/line/line'
-import SlideShow from './mainComponent/imageSlideshow/slideShow'
-import IntroSlidebox from './mainComponent/introSlideBox/introSlidebox'
-import Slidecard from './mainComponent/slidebox/slidebox'
-import Timeline from './mainComponent/timeline/timeline'
-import SolutionCard from './mainComponent/solutionCard/solutionCard'
-import CalculateSaving from './mainComponent/calculateSaving/calulateSaving'
-import TechIntegrations from './mainComponent/techIntegrations/techIntegrations'
-import Testimonials from './mainComponent/testimonials/testimonials'
-import Achievement from './mainComponent/achievement/achievement'
-import Footer from './mainComponent/footer/footer'
+import Button from './element/button/button'
+import Line from './element/line/line'
+import SlideShow from './lists/imageSlideshow/slideShow'
+import IntroSlidebox from './lists/introSlideBox/introSlidebox'
+import Slidecard from './lists/slidebox/slidebox'
+import Timeline from './dataDisplay/timeline/timeline'
+import SolutionCard from './lists/solutionCard/solutionCard'
+import CalculateSaving from './dataDisplay/calculateSaving/calulateSaving'
+import TechIntegrations from './dataDisplay/techIntegrations/techIntegrations'
+import Testimonials from './dataDisplay/testimonials/testimonials'
+import Achievement from './dataDisplay/achievement/achievement'
 
 export default function Home() {
     return (
@@ -28,7 +26,7 @@ export default function Home() {
                         compliant infrastructure in days - not months!
                     </p>
                     <div className="firstsection-left-btn-con">
-                        <ButtonTemplate
+                        <Button
                             title="GET A DEMO"
                             txtColor=""
                             bgColor="green"
@@ -66,7 +64,6 @@ export default function Home() {
             <TechIntegrations />
             <Testimonials />
             <Achievement />
-            <Footer />
         </>
     )
 }

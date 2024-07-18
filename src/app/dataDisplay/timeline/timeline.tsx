@@ -87,6 +87,7 @@ export default function Timeline() {
                             alt="This is an image of timeline"
                         />
                     </li>
+
                     <li
                         className="timeline-img-element"
                         id="timeline-last-img-id"

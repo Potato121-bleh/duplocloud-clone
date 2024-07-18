@@ -1,4 +1,4 @@
-import ButtonTemplate from '@/app/component/buttonTemplate/ButtonTemplate'
+import Button from '@/app/element/button/button'
 import Image from 'next/image'
 import './achievement.css'
 
@@ -60,7 +60,7 @@ export default function Achievement() {
                             enhance security, and drive innovation with
                             DuploCloud.
                         </p>
-                        <ButtonTemplate
+                        <Button
                             title="GET A DEMO"
                             bgColor="green"
                             txtColor="black"

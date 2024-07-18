@@ -2,24 +2,24 @@ $dark: #002E48;
 $blue: #2E9CDF;
 $hoverBlue: #003859;
 
-.poop-main-con {
+.footer-main-con {
     height:530px;
     padding-top:50px;
     background-color: $dark;
 }
 
-.poop-con {
+.footer-con {
     list-style: none;
     padding:0;
     display:flex;
     justify-content: space-between;
 }
-.poop-first-child {
+.footer-first-child {
     width:25%;
     list-style: none;
     padding:0;
 }
-.poop-firstchild-header {
+.footer-firstchild-header {
     padding-left:20px;
     h1 {
         font-weight: 450;
@@ -27,12 +27,12 @@ $hoverBlue: #003859;
         color: $blue;
     }
 }
-.poop-firstchild-body {
+.footer-firstchild-body {
     list-style: none;
     padding:0;
     display:flex;
 }
-.poop-firstchild-body-left {
+.footer-firstchild-body-left {
     h5 {
         width:100px;
         color:white;
@@ -47,7 +47,7 @@ $hoverBlue: #003859;
         background-color: $hoverBlue;
     }
 }
-.poop-firstchild-body-right {
+.footer-firstchild-body-right {
     margin-left:20px;
     h5 {
         width:100px;
@@ -77,12 +77,12 @@ $hoverBlue: #003859;
 
 
 
-.poop-second-child {
+.footer-second-child {
     width:15%;
     list-style: none;
     padding:0;
 }
-.poop-secondchild-header {
+.footer-secondchild-header {
     padding-left:20px;
     h1 {
         font-weight: 450;
@@ -91,7 +91,7 @@ $hoverBlue: #003859;
     }
 }
 
-.poop-secondchild-body {
+.footer-secondchild-body {
     list-style: none;
     padding:0;
     h5 {
@@ -122,12 +122,12 @@ $hoverBlue: #003859;
 
 
 
-.poop-third-child {
+.footer-third-child {
     width:15%;
     list-style: none;
     padding:0;
 }
-.poop-thirdchild-header {
+.footer-thirdchild-header {
     padding-left:20px;
     h1 {
         font-weight: 450;
@@ -136,7 +136,7 @@ $hoverBlue: #003859;
     }
 }
 
-.poop-thirdchild-body {
+.footer-thirdchild-body {
     list-style: none;
     padding:0;
     h5 {
@@ -169,24 +169,24 @@ $hoverBlue: #003859;
 
 
 
-.poop-last-child {
+.footer-last-child {
     width:25%;
     list-style: none;
     padding:0;
 }
-.poop-lastchild-header {
+.footer-lastchild-header {
     h1 {
         font-weight: 450;
         font-size: 25px;
         color: $blue;
     }
 }
-.poop-lastchild-body {
+.footer-lastchild-body {
     list-style: none;
     padding:0;
     display:flex;
 }
-.poop-lastchild-body-left {
+.footer-lastchild-body-left {
     h5 {
         width:150px;
         color:white;
@@ -199,7 +199,7 @@ $hoverBlue: #003859;
         color: $blue;
     }
 }
-.poop-lastchild-body-right {
+.footer-lastchild-body-right {
     margin-left:20px;
     cursor: pointer;
     h5 {
@@ -229,7 +229,7 @@ $hoverBlue: #003859;
 
 
 
-.poop-afterlastchild-con {
+.footer-afterlastchild-con {
     list-style: none;
     padding: 0;
     padding-left:10px;
@@ -247,7 +247,7 @@ $hoverBlue: #003859;
         color: $blue
     }
 }
-.poop-afterlastchild-header {
+.footer-afterlastchild-header {
     h1 {
         font-weight: 450;
         font-size: 25px;
@@ -255,17 +255,17 @@ $hoverBlue: #003859;
         width: 150px;
     }
 }
-.poop-afterlastchild-img-con {
+.footer-afterlastchild-img-con {
     margin-top:20px;
     margin-bottom:0;
 }
 
-.poop-soc-con {
+.footer-soc-con {
     margin-left:30px;
     width:250px;
 }
 
-.poop-soc-text {
+.footer-soc-text {
     display:inline-block;
     margin:0;
     margin-left:20px;

@@ -1,4 +1,4 @@
-import ButtonTemplate from '@/app/component/buttonTemplate/ButtonTemplate'
+import Button from '@/app/element/button/button'
 import './techIntegrations.css'
 import Image from 'next/image'
 
@@ -15,7 +15,7 @@ export default function TechIntegrations() {
                         over 500 cloud services.
                     </p>
                     <div className="techIntegrations-btn-con">
-                        <ButtonTemplate
+                        <Button
                             title="OUR INTEGRATIONS"
                             bgColor="green"
                             txtColor="black"

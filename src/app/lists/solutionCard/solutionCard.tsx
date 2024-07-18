@@ -1,5 +1,5 @@
 import './solutioncard.css'
-import ButtonTemplate from '@/app/component/buttonTemplate/ButtonTemplate'
+import Button from '@/app/element/button/button'
 
 export default function SolutionCard() {
     const cardList = [
@@ -43,7 +43,7 @@ export default function SolutionCard() {
                             <h3>{element.title}</h3>
                             <p>{element.desc}</p>
                             <div className="solutionCard-btn-con">
-                                <ButtonTemplate
+                                <Button
                                     title="LEARN MORE"
                                     txtColor="black"
                                     bgColor="green"

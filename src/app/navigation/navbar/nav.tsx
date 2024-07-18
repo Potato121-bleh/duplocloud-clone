@@ -699,5 +699,3 @@ export default function Navbar() {
         </nav>
     )
 }
-
-//Line 467 with useCase

@@ -3,20 +3,20 @@ import Image from 'next/image'
 
 export default function Footer() {
     return (
-        <footer className="poop-main-con">
-            <ul className="poop-con">
-                <ul className="poop-first-child">
-                    <li className="poop-firstchild-header">
+        <footer className="footer-main-con">
+            <ul className="footer-con">
+                <ul className="footer-first-child">
+                    <li className="footer-firstchild-header">
                         <h1>Compliance Standards</h1>
                     </li>
-                    <ul className="poop-firstchild-body">
-                        <li className="poop-firstchild-body-left">
+                    <ul className="footer-firstchild-body">
+                        <li className="footer-firstchild-body-left">
                             <h5>SOC 2</h5>
                             <h5>HIPAA</h5>
                             <h5>PCI-DSS</h5>
                             <h5>FedRAMP</h5>
                         </li>
-                        <li className="poop-firstchild-body-right">
+                        <li className="footer-firstchild-body-right">
                             <h5>HITRUST</h5>
                             <h5>GDPR</h5>
                             <h5>NIST</h5>
@@ -26,11 +26,11 @@ export default function Footer() {
                     </ul>
                 </ul>
 
-                <ul className="poop-second-child">
-                    <li className="poop-secondchild-header">
+                <ul className="footer-second-child">
+                    <li className="footer-secondchild-header">
                         <h1>Integrations</h1>
                     </li>
-                    <li className="poop-secondchild-body">
+                    <li className="footer-secondchild-body">
                         <h5>Terraform</h5>
                         <h5>Kubernetes</h5>
                         <h5>CircleCI</h5>
@@ -41,11 +41,11 @@ export default function Footer() {
                     </li>
                 </ul>
 
-                <ul className="poop-third-child">
-                    <li className="poop-thirdchild-header">
+                <ul className="footer-third-child">
+                    <li className="footer-thirdchild-header">
                         <h1>Solutions</h1>
                     </li>
-                    <li className="poop-thirdchild-body">
+                    <li className="footer-thirdchild-body">
                         <h5>DevOps Automation</h5>
                         <h5>Cloud Migration Services</h5>
                         <h5>Security and Compliance</h5>
@@ -53,16 +53,16 @@ export default function Footer() {
                     </li>
                 </ul>
 
-                <ul className="poop-last-child">
-                    <li className="poop-lastchild-header">
+                <ul className="footer-last-child">
+                    <li className="footer-lastchild-header">
                         <h1>Headquarters</h1>
                     </li>
-                    <ul className="poop-lastchild-body">
-                        <li className="poop-lastchild-body-left">
+                    <ul className="footer-lastchild-body">
+                        <li className="footer-lastchild-body-left">
                             <h5>2150 N 1st St San Jose, CA 95131</h5>
                             <h5>+1 (866) 830-6588</h5>
                         </li>
-                        <li className="poop-lastchild-body-right">
+                        <li className="footer-lastchild-body-right">
                             <Image
                                 width={120}
                                 height={70}
@@ -72,11 +72,11 @@ export default function Footer() {
                         </li>
                     </ul>
 
-                    <ul className="poop-afterlastchild-con">
-                        <li className="poop-afterlastchild-header">
+                    <ul className="footer-afterlastchild-con">
+                        <li className="footer-afterlastchild-header">
                             <h1>Find us on social media</h1>
                         </li>
-                        <li className="poop-afterlastchild-img-con">
+                        <li className="footer-afterlastchild-img-con">
                             <Image
                                 width={230}
                                 height={28}
@@ -88,14 +88,14 @@ export default function Footer() {
                     </ul>
                 </ul>
             </ul>
-            <div className="poop-soc-con">
+            <div className="footer-soc-con">
                 <Image
                     width={60}
                     height={60}
                     src="/footer/SOC.png"
                     alt="This is soc2 img"
                 />
-                <div className="poop-soc-text">
+                <div className="footer-soc-text">
                     <p>We are SOC2</p>
                     <p>Type 2 Compliant</p>
                 </div>

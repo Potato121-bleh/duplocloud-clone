@@ -5,7 +5,7 @@ type btnType = {
     txtColor: string
 }
 
-export default function ButtonTemplate({
+export default function Button({
     title,
     bgColor,
     txtColor,

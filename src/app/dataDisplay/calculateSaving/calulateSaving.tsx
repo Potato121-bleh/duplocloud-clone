@@ -1,4 +1,4 @@
-import ButtonTemplate from '@/app/component/buttonTemplate/ButtonTemplate'
+import Button from '@/app/element/button/button'
 import './calculateSaving.css'
 
 export default function CalculateSaving() {
@@ -18,7 +18,7 @@ export default function CalculateSaving() {
                 </div>
 
                 <div className="calculateSaving-btn-con">
-                    <ButtonTemplate
+                    <Button
                         title="CALCULATE YOUR SAVING"
                         txtColor="black"
                         bgColor="green"

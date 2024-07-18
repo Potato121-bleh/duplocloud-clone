@@ -34,6 +34,7 @@ body {
 .firstsection-right-con {
   position: relative;
   width: 55%;
+  height:50%;
 }
 
 .firstsection-style-line-con {
@@ -43,7 +44,7 @@ body {
 }
 
 #firstsection-animation {
-  margin-left: 40px;
+  margin-left: 18%;
   width: 84%;
   height: 100%;
 }

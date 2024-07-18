@@ -3,8 +3,8 @@
 import { useEffect } from 'react'
 import Image from 'next/image'
 import './slidebox.css'
-import Line from '@/app/component/line/line'
-import ButtonTemplate from '@/app/component/buttonTemplate/ButtonTemplate'
+import Line from '@/app/element/line/line'
+import Button from '@/app/element/button/button'
 
 type lastcheckType = {
     lastchild: HTMLElement
@@ -214,14 +214,14 @@ export default function Slidecard() {
             <section className="slidebox-bottom-con">
                 <ul className="slidebox-bottom-btn-con">
                     <li>
-                        <ButtonTemplate
+                        <Button
                             title="EXPLORE THE PLATFORM"
                             bgColor="blue"
                             txtColor="white"
                         />
                     </li>
                     <li>
-                        <ButtonTemplate
+                        <Button
                             title="DEVELOPER DOCUMENTATION"
                             bgColor="blue"
                             txtColor="white"

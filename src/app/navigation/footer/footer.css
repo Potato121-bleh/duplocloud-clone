@@ -1,38 +1,38 @@
-.poop-main-con {
+.footer-main-con {
   height: 530px;
   padding-top: 50px;
   background-color: #002E48;
 }
 
-.poop-con {
+.footer-con {
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: space-between;
 }
 
-.poop-first-child {
+.footer-first-child {
   width: 25%;
   list-style: none;
   padding: 0;
 }
 
-.poop-firstchild-header {
+.footer-firstchild-header {
   padding-left: 20px;
 }
-.poop-firstchild-header h1 {
+.footer-firstchild-header h1 {
   font-weight: 450;
   font-size: 25px;
   color: #2E9CDF;
 }
 
-.poop-firstchild-body {
+.footer-firstchild-body {
   list-style: none;
   padding: 0;
   display: flex;
 }
 
-.poop-firstchild-body-left h5 {
+.footer-firstchild-body-left h5 {
   width: 100px;
   color: white;
   padding: 10px;
@@ -41,15 +41,15 @@
   transition: all 300ms ease-in-out;
   cursor: pointer;
 }
-.poop-firstchild-body-left h5:hover {
+.footer-firstchild-body-left h5:hover {
   color: #2E9CDF;
   background-color: #003859;
 }
 
-.poop-firstchild-body-right {
+.footer-firstchild-body-right {
   margin-left: 20px;
 }
-.poop-firstchild-body-right h5 {
+.footer-firstchild-body-right h5 {
   width: 100px;
   color: white;
   padding: 10px;
@@ -58,41 +58,41 @@
   border-radius: 8px;
   transition: all 300ms ease-in-out;
 }
-.poop-firstchild-body-right h5:hover {
+.footer-firstchild-body-right h5:hover {
   color: #2E9CDF;
   background-color: #003859;
 }
-.poop-firstchild-body-right p {
+.footer-firstchild-body-right p {
   border-radius: 8px;
   color: #2E9CDF;
   margin-left: 10px;
   padding: 10px;
   cursor: pointer;
 }
-.poop-firstchild-body-right p:hover {
+.footer-firstchild-body-right p:hover {
   background-color: #003859;
 }
 
-.poop-second-child {
+.footer-second-child {
   width: 15%;
   list-style: none;
   padding: 0;
 }
 
-.poop-secondchild-header {
+.footer-secondchild-header {
   padding-left: 20px;
 }
-.poop-secondchild-header h1 {
+.footer-secondchild-header h1 {
   font-weight: 450;
   font-size: 25px;
   color: #2E9CDF;
 }
 
-.poop-secondchild-body {
+.footer-secondchild-body {
   list-style: none;
   padding: 0;
 }
-.poop-secondchild-body h5 {
+.footer-secondchild-body h5 {
   width: 110px;
   color: white;
   padding: 10px;
@@ -101,11 +101,11 @@
   transition: all 300ms ease-in-out;
   cursor: pointer;
 }
-.poop-secondchild-body h5:hover {
+.footer-secondchild-body h5:hover {
   color: #2E9CDF;
   background-color: #003859;
 }
-.poop-secondchild-body p {
+.footer-secondchild-body p {
   border-radius: 8px;
   color: #2E9CDF;
   margin-left: 10px;
@@ -113,30 +113,30 @@
   cursor: pointer;
   transition: all 300ms ease-in-out;
 }
-.poop-secondchild-body p:hover {
+.footer-secondchild-body p:hover {
   background-color: #003859;
 }
 
-.poop-third-child {
+.footer-third-child {
   width: 15%;
   list-style: none;
   padding: 0;
 }
 
-.poop-thirdchild-header {
+.footer-thirdchild-header {
   padding-left: 20px;
 }
-.poop-thirdchild-header h1 {
+.footer-thirdchild-header h1 {
   font-weight: 450;
   font-size: 25px;
   color: #2E9CDF;
 }
 
-.poop-thirdchild-body {
+.footer-thirdchild-body {
   list-style: none;
   padding: 0;
 }
-.poop-thirdchild-body h5 {
+.footer-thirdchild-body h5 {
   width: 170px;
   color: white;
   padding: 10px;
@@ -145,11 +145,11 @@
   transition: all 300ms ease-in-out;
   cursor: pointer;
 }
-.poop-thirdchild-body h5:hover {
+.footer-thirdchild-body h5:hover {
   color: #2E9CDF;
   background-color: #003859;
 }
-.poop-thirdchild-body p {
+.footer-thirdchild-body p {
   border-radius: 8px;
   color: #2E9CDF;
   margin-left: 10px;
@@ -157,29 +157,29 @@
   cursor: pointer;
   transition: all 300ms ease-in-out;
 }
-.poop-thirdchild-body p:hover {
+.footer-thirdchild-body p:hover {
   background-color: #003859;
 }
 
-.poop-last-child {
+.footer-last-child {
   width: 25%;
   list-style: none;
   padding: 0;
 }
 
-.poop-lastchild-header h1 {
+.footer-lastchild-header h1 {
   font-weight: 450;
   font-size: 25px;
   color: #2E9CDF;
 }
 
-.poop-lastchild-body {
+.footer-lastchild-body {
   list-style: none;
   padding: 0;
   display: flex;
 }
 
-.poop-lastchild-body-left h5 {
+.footer-lastchild-body-left h5 {
   width: 150px;
   color: white;
   margin: 4px;
@@ -187,15 +187,15 @@
   transition: all 300ms ease-in-out;
   cursor: pointer;
 }
-.poop-lastchild-body-left h5:hover {
+.footer-lastchild-body-left h5:hover {
   color: #2E9CDF;
 }
 
-.poop-lastchild-body-right {
+.footer-lastchild-body-right {
   margin-left: 20px;
   cursor: pointer;
 }
-.poop-lastchild-body-right h5 {
+.footer-lastchild-body-right h5 {
   width: 100px;
   color: white;
   padding: 10px;
@@ -204,28 +204,28 @@
   border-radius: 8px;
   transition: all 300ms ease-in-out;
 }
-.poop-lastchild-body-right h5:hover {
+.footer-lastchild-body-right h5:hover {
   color: #2E9CDF;
   background-color: #003859;
 }
-.poop-lastchild-body-right p {
+.footer-lastchild-body-right p {
   border-radius: 8px;
   color: #2E9CDF;
   margin-left: 10px;
   padding: 10px;
   cursor: pointer;
 }
-.poop-lastchild-body-right p:hover {
+.footer-lastchild-body-right p:hover {
   background-color: #003859;
 }
 
-.poop-afterlastchild-con {
+.footer-afterlastchild-con {
   list-style: none;
   padding: 0;
   padding-left: 10px;
   margin-top: 60px;
 }
-.poop-afterlastchild-con p {
+.footer-afterlastchild-con p {
   color: white;
   cursor: pointer;
   margin-left: -10px;
@@ -233,35 +233,35 @@
   font-size: 13px;
   display: inline-block;
 }
-.poop-afterlastchild-con p:hover {
+.footer-afterlastchild-con p:hover {
   background-color: #003859;
   color: #2E9CDF;
 }
 
-.poop-afterlastchild-header h1 {
+.footer-afterlastchild-header h1 {
   font-weight: 450;
   font-size: 25px;
   color: #2E9CDF;
   width: 150px;
 }
 
-.poop-afterlastchild-img-con {
+.footer-afterlastchild-img-con {
   margin-top: 20px;
   margin-bottom: 0;
 }
 
-.poop-soc-con {
+.footer-soc-con {
   margin-left: 30px;
   width: 250px;
 }
 
-.poop-soc-text {
+.footer-soc-text {
   display: inline-block;
   margin: 0;
   margin-left: 20px;
   transform: translateY(-10px);
 }
-.poop-soc-text p {
+.footer-soc-text p {
   color: white;
   margin: 0;
 }
