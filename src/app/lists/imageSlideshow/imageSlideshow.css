@@ -22,6 +22,7 @@
 
 .slideshow-img-con {
   width: 100%;
+  overflow: hidden;
 }
 
 .slideshow-img-4scroll {

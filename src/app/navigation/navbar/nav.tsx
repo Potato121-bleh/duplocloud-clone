@@ -1,3 +1,4 @@
+'use client'
 import './nav.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
@@ -288,6 +289,283 @@ export default function Navbar() {
             },
         ],
     ]
+    const platformElementFeature = [
+        [
+            {
+                id: 1,
+                title: 'Automated Provisioning',
+            },
+            {
+                id: 2,
+                title: 'Cloud Services',
+            },
+            {
+                id: 3,
+                title: 'CI / CD',
+            },
+        ],
+        [
+            {
+                id: 1,
+                title: 'Security',
+            },
+            {
+                id: 2,
+                title: 'Compliance',
+            },
+            {
+                id: 3,
+                title: 'Diagnostics & Monitoring',
+            },
+            {
+                id: 4,
+                title: 'Integrations',
+            },
+        ],
+    ]
+    const useCaseElement = [
+        [
+            {
+                id: 1,
+                title: 'Startups',
+            },
+            {
+                id: 2,
+                title: 'Hypergrowth Companies',
+            },
+            {
+                id: 3,
+                title: 'AL/ML Workloads',
+            },
+        ],
+        [
+            {
+                id: 1,
+                title: 'DevOps Automation',
+            },
+            {
+                id: 2,
+                title: 'Cloud Migration',
+            },
+            {
+                id: 3,
+                title: 'Compliance and Security',
+            },
+            {
+                id: 4,
+                title: 'Platform Engineering',
+            },
+        ],
+    ]
+    const whyDuploElement = [
+        [
+            {
+                id: 1,
+                title: 'About Us',
+            },
+            {
+                id: 2,
+                title: 'Hiring / Careers',
+            },
+            {
+                id: 3,
+                title: 'Partner With US',
+            },
+        ],
+        [
+            {
+                id: 1,
+                title: 'Kami Vision',
+            },
+            {
+                id: 2,
+                title: 'Uniphore',
+            },
+            {
+                id: 3,
+                title: 'PartnerTap',
+            },
+        ],
+    ]
+    const resourceElement = [
+        [
+            {
+                id: 1,
+                title: 'Blog',
+            },
+            {
+                id: 2,
+                title: 'Video Library',
+            },
+            {
+                id: 3,
+                title: 'Webinars',
+            },
+            {
+                id: 4,
+                title: 'eBooks',
+            },
+        ],
+        [
+            {
+                id: 1,
+                title: 'Documentation',
+            },
+            {
+                id: 2,
+                title: 'Tutorials',
+            },
+            {
+                id: 3,
+                title: 'Frequently Asked Questions (FAQ)',
+            },
+            {
+                id: 4,
+                title: 'Technical White Papers',
+            },
+        ],
+        [
+            {
+                id: 1,
+                title: 'Events',
+            },
+            {
+                id: 2,
+                title: 'Press & News',
+            },
+        ],
+    ]
+
+    const handleBurgerMenu = () => {
+        let menubar = document.getElementById('menu-con-id') as HTMLElement
+        let platform = document.getElementById(
+            'platform-menu-id'
+        ) as HTMLElement
+        let usecase = document.getElementById('usecase-menu-id') as HTMLElement
+        let whydup = document.getElementById('whydup-menu-id') as HTMLElement
+        let pricing = document.getElementById('pricing-menu-id') as HTMLElement
+        let resource = document.getElementById(
+            'resource-menu-id'
+        ) as HTMLElement
+        let findus = document.getElementById('findus-menu-id') as HTMLElement
+
+        let burgerTopBun = document.getElementById(
+            'burgermenu-line-one'
+        ) as HTMLElement
+        let burgerBottomBun = document.getElementById(
+            'burgermenu-line-three'
+        ) as HTMLElement
+        let burgermeat = document.getElementById(
+            'burgermenu-line-two'
+        ) as HTMLElement
+        menubar.classList.toggle('display-block')
+
+        burgerTopBun.classList.toggle('move-head-down')
+        burgermeat.classList.toggle('opacity-hide')
+        burgerBottomBun.classList.toggle('move-head-up')
+        setTimeout(() => {
+            menubar.classList.toggle('move-menu-in')
+        }, 100)
+        setTimeout(() => {
+            platform.classList.toggle('clear-translate')
+            setTimeout(() => {
+                usecase.classList.toggle('clear-translate')
+                setTimeout(() => {
+                    whydup.classList.toggle('clear-translate')
+                    setTimeout(() => {
+                        pricing.classList.toggle('clear-translate')
+                        setTimeout(() => {
+                            resource.classList.toggle('clear-translate')
+                            findus.classList.toggle('clear-translate')
+                        }, 300)
+                    }, 100)
+                }, 100)
+            }, 100)
+        }, 100)
+    }
+    const handlePlatform = () => {
+        let usecase = document.getElementById('usecase-menu-id') as HTMLElement
+        let whydup = document.getElementById('whydup-menu-id') as HTMLElement
+        let pricing = document.getElementById('pricing-menu-id') as HTMLElement
+        let resource = document.getElementById(
+            'resource-menu-id'
+        ) as HTMLElement
+        let platform = document.getElementById(
+            'platform-child-body-id'
+        ) as HTMLElement
+        usecase.classList.toggle('clear-translate')
+        whydup.classList.toggle('clear-translate')
+        pricing.classList.toggle('clear-translate')
+        resource.classList.toggle('clear-translate')
+        setTimeout(() => {
+            platform.classList.toggle('display')
+        }, 500)
+    }
+    const handleUsecase = () => {
+        let platform = document.getElementById(
+            'platform-menu-id'
+        ) as HTMLElement
+        let whydup = document.getElementById('whydup-menu-id') as HTMLElement
+        let pricing = document.getElementById('pricing-menu-id') as HTMLElement
+        let resource = document.getElementById(
+            'resource-menu-id'
+        ) as HTMLElement
+        let usecase = document.getElementById(
+            'usecase-child-body-id'
+        ) as HTMLElement
+        platform.classList.toggle('clear-translate')
+        whydup.classList.toggle('clear-translate')
+        pricing.classList.toggle('clear-translate')
+        resource.classList.toggle('clear-translate')
+        setTimeout(() => {
+            platform.classList.toggle('display-none')
+            usecase.classList.toggle('display')
+        }, 500)
+    }
+    const handleWhydup = () => {
+        let usecase = document.getElementById('usecase-menu-id') as HTMLElement
+        let platform = document.getElementById(
+            'platform-menu-id'
+        ) as HTMLElement
+        let pricing = document.getElementById('pricing-menu-id') as HTMLElement
+        let resource = document.getElementById(
+            'resource-menu-id'
+        ) as HTMLElement
+        let whydup = document.getElementById(
+            'whydup-child-body-id'
+        ) as HTMLElement
+        usecase.classList.toggle('clear-translate')
+        platform.classList.toggle('clear-translate')
+        pricing.classList.toggle('clear-translate')
+        resource.classList.toggle('clear-translate')
+        setTimeout(() => {
+            platform.classList.toggle('display-none')
+            usecase.classList.toggle('display-none')
+            whydup.classList.toggle('display')
+        }, 500)
+    }
+    const handleResources = () => {
+        let usecase = document.getElementById('usecase-menu-id') as HTMLElement
+        let whydup = document.getElementById('whydup-menu-id') as HTMLElement
+        let pricing = document.getElementById('pricing-menu-id') as HTMLElement
+        let platform = document.getElementById(
+            'platform-menu-id'
+        ) as HTMLElement
+        let resource = document.getElementById(
+            'resource-child-body-id'
+        ) as HTMLElement
+        usecase.classList.toggle('clear-translate')
+        whydup.classList.toggle('clear-translate')
+        pricing.classList.toggle('clear-translate')
+        platform.classList.toggle('clear-translate')
+        setTimeout(() => {
+            platform.classList.toggle('display-none')
+            usecase.classList.toggle('display-none')
+            whydup.classList.toggle('display-none')
+            pricing.classList.toggle('display-none')
+            resource.classList.toggle('display')
+        }, 500)
+    }
 
     return (
         <>
@@ -712,6 +990,365 @@ export default function Navbar() {
                 </ul>
                 <li className="navbar-demo-con">
                     <button className="navbar-btn">GET A DEMO</button>
+                </li>
+            </nav>
+
+            {/* UI FOR MOBILE VERSION */}
+
+            <nav className="navbar-main-con-mobile">
+                <li className="navbar-logo-con">
+                    <Image
+                        id="logo"
+                        width={30}
+                        height={30}
+                        src="/Duplocloud_logo.png"
+                        alt="This is an logo image"
+                    />
+                    <h1 id="logo-title">DuploCloud</h1>
+                </li>
+                <li className="navbar-demo-con-mobile">
+                    <button className="navbar-btn-mobile">GET A DEMO</button>
+                    <ul className="navbar-burgermenu-con-mobile">
+                        <ul className="navbar-burgermenu-icon-con-mobile">
+                            <li
+                                className="navbar-burgermenu-mobile "
+                                id="burgermenu-line-one"
+                            ></li>
+                            <li
+                                className="navbar-burgermenu-mobile"
+                                id="burgermenu-line-two"
+                            ></li>
+                            <li
+                                className="navbar-burgermenu-mobile "
+                                id="burgermenu-line-three"
+                            ></li>
+                            <button
+                                className="burgermenu-btn-forclick"
+                                onClick={handleBurgerMenu}
+                            ></button>
+                        </ul>
+
+                        <ul className="navbar-menu-con-mobile" id="menu-con-id">
+                            <ul
+                                className="navbar-menu-child-mobile platform-menu"
+                                id="platform-menu-id"
+                            >
+                                <li className="navbar-menu-child-header-mobile">
+                                    <p className="navbar-p">Platform</p>
+                                    <FontAwesomeIcon
+                                        className="navbar-arrow-icon"
+                                        icon={faChevronDown}
+                                    />
+                                    <button
+                                        onClick={handlePlatform}
+                                        className="navbar-btn-forclick"
+                                    ></button>
+                                </li>
+                                <li
+                                    className="navbar-menu-child-body-mobile"
+                                    id="platform-child-body-id"
+                                >
+                                    <div className="navbar-subchild-header">
+                                        <Image
+                                            id="feature-icon"
+                                            width={23}
+                                            height={23}
+                                            src="/Feature.png"
+                                            alt="This is an feature icon"
+                                        />
+                                        <p className="navbar-list-subchild-header-title-mobile changecolor-title">
+                                            Features
+                                        </p>
+                                    </div>
+                                    <p className="changecolor-title">
+                                        Platform Overview
+                                    </p>
+                                    {platformElementFeature[0].map(
+                                        (element) => {
+                                            return (
+                                                <p key={element.id}>
+                                                    {element.title}
+                                                </p>
+                                            )
+                                        }
+                                    )}
+                                    <br />
+                                    {platformElementFeature[1].map(
+                                        (element) => {
+                                            return (
+                                                <p key={element.id}>
+                                                    {element.title}
+                                                </p>
+                                            )
+                                        }
+                                    )}
+                                    <div className="navbar-subchild-header">
+                                        <Image
+                                            id="feature-icon"
+                                            width={23}
+                                            height={23}
+                                            src="/For_team.png"
+                                            alt="This is an for_team icon"
+                                        />
+                                        <p className="navbar-list-subchild-header-title changecolor-title ">
+                                            For Teams
+                                        </p>
+                                    </div>
+                                    <p>Developers</p>
+                                    <p>IT Professionals</p>
+                                </li>
+                            </ul>
+                            <ul
+                                className="navbar-menu-child-mobile usecase-menu"
+                                id="usecase-menu-id"
+                            >
+                                <li className="navbar-menu-child-header-mobile">
+                                    <p className="navbar-p">Use Cases</p>
+                                    <FontAwesomeIcon
+                                        className="navbar-arrow-icon"
+                                        icon={faChevronDown}
+                                    />
+                                    <button
+                                        onClick={handleUsecase}
+                                        className="navbar-btn-forclick"
+                                    ></button>
+                                </li>
+
+                                <li
+                                    className="navbar-menu-child-body-mobile"
+                                    id="usecase-child-body-id"
+                                >
+                                    <div className="navbar-subchild-header">
+                                        <Image
+                                            id="feature-icon"
+                                            width={23}
+                                            height={23}
+                                            src="/Business_case_icon.png"
+                                            alt="This is an business icon"
+                                        />
+                                        <p className="navbar-list-subchild-header-title-mobile changecolor-title">
+                                            Business Case
+                                        </p>
+                                    </div>
+                                    {useCaseElement[0].map((element) => {
+                                        return (
+                                            <p key={element.id}>
+                                                {element.title}
+                                            </p>
+                                        )
+                                    })}
+
+                                    <div className="navbar-subchild-header">
+                                        <Image
+                                            id="feature-icon"
+                                            width={23}
+                                            height={23}
+                                            src="/Business_case_icon.png"
+                                            alt="This is an business icon"
+                                        />
+                                        <p className="navbar-list-subchild-header-title-mobile changecolor-title">
+                                            Solutions
+                                        </p>
+                                    </div>
+                                    {useCaseElement[1].map((element) => {
+                                        return (
+                                            <p key={element.id}>
+                                                {element.title}
+                                            </p>
+                                        )
+                                    })}
+                                    <div className="navbar-subchild-header">
+                                        <Image
+                                            id="feature-icon"
+                                            width={23}
+                                            height={23}
+                                            src="/Business_case_icon.png"
+                                            alt="This is an business icon"
+                                        />
+                                        <p className="navbar-list-subchild-header-title-mobile changecolor-title">
+                                            Platforms
+                                        </p>
+                                    </div>
+                                    {navUsecaseBlock.map((element) => {
+                                        return (
+                                            <div
+                                                key={element.id}
+                                                className="navbar-subchild-text-con  navbar-subchild-text-con-block"
+                                            >
+                                                <NavBlock
+                                                    title={`${element.title}`}
+                                                    imageUrl={`${element.imageUrl}`}
+                                                />
+                                            </div>
+                                        )
+                                    })}
+                                </li>
+                            </ul>
+                            <ul
+                                className="navbar-menu-child-mobile whydup-menu"
+                                id="whydup-menu-id"
+                            >
+                                <li className="navbar-menu-child-header-mobile">
+                                    <p className="navbar-p">Why DuploCloud</p>
+                                    <FontAwesomeIcon
+                                        className="navbar-arrow-icon"
+                                        icon={faChevronDown}
+                                    />
+                                    <button
+                                        onClick={handleWhydup}
+                                        className="navbar-btn-forclick btn-forclick-longer"
+                                    ></button>
+                                </li>
+                                <li
+                                    className="navbar-menu-child-body-mobile"
+                                    id="whydup-child-body-id"
+                                >
+                                    <div className="navbar-subchild-header">
+                                        <Image
+                                            width={28}
+                                            height={23}
+                                            src="/company_icon.png"
+                                            alt="This is an feature icon"
+                                        />
+                                        <p className="navbar-list-subchild-header-title-mobile changecolor-title">
+                                            Company
+                                        </p>
+                                    </div>
+                                    {whyDuploElement[0].map((element) => {
+                                        return (
+                                            <p key={element.id}>
+                                                {element.title}
+                                            </p>
+                                        )
+                                    })}
+                                    <div className="navbar-subchild-header">
+                                        <Image
+                                            width={26}
+                                            height={23}
+                                            src="/customer_icon.png"
+                                            alt="This is an for_team icon"
+                                        />
+                                        <p className="navbar-list-subchild-header-title-mobile changecolor-title">
+                                            Customer Stories
+                                        </p>
+                                    </div>
+                                    {whyDuploElement[1].map((element) => {
+                                        return (
+                                            <p key={element.id}>
+                                                {element.title}
+                                            </p>
+                                        )
+                                    })}
+                                    <p className="navbar-subchild-last-txt">
+                                        All Customer Stories
+                                    </p>
+                                </li>
+                            </ul>
+                            <li
+                                className="navbar-menu-child-mobile pricing-menu"
+                                id="pricing-menu-id"
+                            >
+                                <p className="navbar-p">Pricing</p>
+                            </li>
+                            <ul
+                                className="navbar-menu-child-mobile resource-menu"
+                                id="resource-menu-id"
+                            >
+                                <li className="navbar-menu-child-header-mobile">
+                                    <p className="navbar-p">Resources</p>
+                                    <FontAwesomeIcon
+                                        className="navbar-arrow-icon"
+                                        icon={faChevronDown}
+                                    />
+                                    <button
+                                        onClick={handleResources}
+                                        className="navbar-btn-forclick"
+                                    ></button>
+                                </li>
+                                <li
+                                    className="navbar-menu-child-body-mobile"
+                                    id="resource-child-body-id"
+                                >
+                                    <div className="navbar-subchild-header">
+                                        <Image
+                                            id="feature-icon"
+                                            width={23}
+                                            height={23}
+                                            src="/Learn_connect_icon.png"
+                                            alt="This is an business icon"
+                                        />
+                                        <p className="navbar-list-subchild-header-title-mobile changecolor-title">
+                                            Learn & Connect
+                                        </p>
+                                    </div>
+                                    {resourceElement[0].map((element) => {
+                                        return (
+                                            <p key={element.id}>
+                                                {element.title}
+                                            </p>
+                                        )
+                                    })}
+                                    <p className="navbar-subchild-last-txt">
+                                        All Assets
+                                    </p>
+                                    <div className="navbar-subchild-header">
+                                        <Image
+                                            id="feature-icon"
+                                            width={23}
+                                            height={23}
+                                            src="/Product_help_icon.png"
+                                            alt="This is an solutions icon"
+                                        />
+                                        <p className="navbar-list-subchild-header-title-mobile changecolor-title">
+                                            Product Help
+                                        </p>
+                                    </div>
+                                    {resourceElement[1].map((element) => {
+                                        return (
+                                            <p key={element.id}>
+                                                {element.title}
+                                            </p>
+                                        )
+                                    })}
+                                    <div className="navbar-subchild-header">
+                                        <Image
+                                            id="feature-icon"
+                                            width={23}
+                                            height={23}
+                                            src="/In_the_world_icon.png"
+                                            alt="This is an platform icon"
+                                        />
+                                        <p className="navbar-list-subchild-header-title-mobile changecolor-title">
+                                            In the World
+                                        </p>
+                                    </div>
+                                    {resourceElement[2].map((element) => {
+                                        return (
+                                            <p key={element.id}>
+                                                {element.title}
+                                            </p>
+                                        )
+                                    })}
+                                </li>
+                            </ul>
+                            <ul
+                                className="navbar-afterlastchild-con-mobile findus-menu"
+                                id="findus-menu-id"
+                            >
+                                <li className="navbar-afterlastchild-header-mobile">
+                                    <h1>Find us on social media</h1>
+                                </li>
+                                <li className="footer-afterlastchild-img-con">
+                                    <Image
+                                        width={250}
+                                        height={24}
+                                        src="/footer/social-media-light.png"
+                                        alt="This is an image of social media"
+                                    />
+                                </li>
+                            </ul>
+                        </ul>
+                    </ul>
                 </li>
             </nav>
         </>

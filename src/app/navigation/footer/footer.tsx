@@ -1,13 +1,58 @@
+'use client'
 import './footer.css'
 import Image from 'next/image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer() {
+    const handleDropDownCompliance = () => {
+        let compliance = document.getElementById(
+            'footer-first-child-id'
+        ) as HTMLElement
+        let firstchildArrow = document.getElementById(
+            'footer-arrow-id-firstchild'
+        ) as HTMLElement
+        compliance.classList.toggle('increase-height')
+        firstchildArrow.classList.toggle('spin-arrow')
+    }
+    const handleDropDownIntegrations = () => {
+        let integrations = document.getElementById(
+            'footer-second-child-id'
+        ) as HTMLElement
+        let secondchildArrow = document.getElementById(
+            'footer-arrow-id-secondchild'
+        ) as HTMLElement
+
+        secondchildArrow.classList.toggle('spin-arrow')
+        integrations.classList.toggle('increase-height-forintegrations')
+    }
+    const handleDropDownSolution = () => {
+        let solution = document.getElementById(
+            'footer-third-child-id'
+        ) as HTMLElement
+        let thirdchildArrow = document.getElementById(
+            'footer-arrow-id-thirdchild'
+        ) as HTMLElement
+
+        thirdchildArrow.classList.toggle('spin-arrow')
+        solution.classList.toggle('increase-height')
+    }
+
     return (
         <footer className="footer-main-con">
             <ul className="footer-con">
-                <ul className="footer-first-child">
-                    <li className="footer-firstchild-header">
+                <ul
+                    className="footer-first-child dropdown-formobile"
+                    id="footer-first-child-id"
+                >
+                    <li className="footer-firstchild-header footer-header-mobile">
                         <h1>Compliance Standards</h1>
+                        <FontAwesomeIcon
+                            id="footer-arrow-id-firstchild"
+                            onClick={handleDropDownCompliance}
+                            className="footer-arrow-icon"
+                            icon={faChevronDown}
+                        />
                     </li>
                     <ul className="footer-firstchild-body">
                         <li className="footer-firstchild-body-left">
@@ -26,9 +71,18 @@ export default function Footer() {
                     </ul>
                 </ul>
 
-                <ul className="footer-second-child">
-                    <li className="footer-secondchild-header">
+                <ul
+                    className="footer-second-child dropdown-formobile"
+                    id="footer-second-child-id"
+                >
+                    <li className="footer-secondchild-header footer-header-mobile">
                         <h1>Integrations</h1>
+                        <FontAwesomeIcon
+                            id="footer-arrow-id-secondchild"
+                            onClick={handleDropDownIntegrations}
+                            className="footer-arrow-icon"
+                            icon={faChevronDown}
+                        />
                     </li>
                     <li className="footer-secondchild-body">
                         <h5>Terraform</h5>
@@ -41,9 +95,18 @@ export default function Footer() {
                     </li>
                 </ul>
 
-                <ul className="footer-third-child">
-                    <li className="footer-thirdchild-header">
+                <ul
+                    className="footer-third-child dropdown-formobile"
+                    id="footer-third-child-id"
+                >
+                    <li className="footer-thirdchild-header footer-header-mobile">
                         <h1>Solutions</h1>
+                        <FontAwesomeIcon
+                            id="footer-arrow-id-thirdchild"
+                            onClick={handleDropDownSolution}
+                            className="footer-arrow-icon"
+                            icon={faChevronDown}
+                        />
                     </li>
                     <li className="footer-thirdchild-body">
                         <h5>DevOps Automation</h5>
@@ -53,8 +116,8 @@ export default function Footer() {
                     </li>
                 </ul>
 
-                <ul className="footer-last-child">
-                    <li className="footer-lastchild-header">
+                <ul className="footer-last-child" id="footer-last-child-id">
+                    <li className="footer-lastchild-header footer-header-mobile">
                         <h1>Headquarters</h1>
                     </li>
                     <ul className="footer-lastchild-body">
@@ -106,6 +169,7 @@ export default function Footer() {
                 <ul className="copyright-con">
                     <li className="copyright-company-logo-con">
                         <Image
+                            id="copyright-company-logo-id"
                             width={60}
                             height={50}
                             src="/footer/Duplocloud.png"
@@ -113,7 +177,9 @@ export default function Footer() {
                         />
                         <h1>DuploCloud</h1>
                     </li>
-                    <li>Copyright © 2024 DuploCloud, Inc.</li>
+                    <li className="copyright-date">
+                        Copyright © 2024 DuploCloud, Inc.
+                    </li>
                     <li className="copyright-cookie-policy">
                         <span className="copyright-span">Cookie Policy</span> |{' '}
                         <span className="copyright-span">Privacy Policy</span>

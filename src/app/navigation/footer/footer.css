@@ -1,11 +1,3 @@
-#top-page-title-formobile {
-  border: solid red;
-  text-align: center;
-  font-weight: 400;
-  font-size: 35px;
-  display: none;
-}
-
 .footer-main-con {
   height: 530px;
   padding-top: 50px;
@@ -320,4 +312,131 @@
 #rate-us-img-id {
   width: 100%;
   height: 100%;
+}
+
+.footer-arrow-icon {
+  margin-left: 8px;
+  width: 30px;
+  height: 30px;
+  display: none;
+  color: #0091EA;
+  transition: all 1s ease-in-out;
+}
+
+.spin-arrow {
+  transform: rotateZ(180deg);
+}
+
+@keyframes spin-arrow {
+  to {
+    transform: rotateZ(180deg);
+  }
+}
+@media (max-width: 1030px) {
+  .footer-arrow-icon {
+    display: block;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .footer-con {
+    display: block;
+    margin-left: 30px;
+  }
+  .footer-main-con {
+    height: auto;
+  }
+  .dropdown-formobile {
+    width: 96%;
+    height: 60px;
+    overflow-y: hidden;
+    animation: decrease-height 1s forwards;
+    transition: all 1s ease-in-out;
+  }
+  .footer-header-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .footer-header-mobile h1 {
+    font-size: 20px;
+  }
+  .footer-last-child {
+    width: 70%;
+  }
+  .increase-height {
+    animation: increase-height 1.5s forwards;
+  }
+  @keyframes increase-height {
+    to {
+      height: 300px;
+    }
+  }
+  .increase-height-forintegrations {
+    animation: increase-height-forintegrations 1.5s forwards;
+  }
+  @keyframes increase-height-forintegrations {
+    to {
+      height: 380px;
+    }
+  }
+  @keyframes decrease-height {
+    from {
+      height: 300px;
+    }
+  }
+  /* FOR COPYRIGHT SECTION */
+  #copyright-company-logo-id {
+    width: 30px;
+    height: 20px;
+  }
+  .copyright-company-logo-con {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .copyright-company-logo-con h1 {
+    transform: translateY(0px);
+    margin-left: 5px;
+    font-size: 17px;
+  }
+  .copyright-date {
+    font-size: 12px;
+    width: 120px;
+    text-align: center;
+  }
+  .copyright-span {
+    font-size: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .copyright-main-con {
+    height: 55px;
+  }
+  .copyright-span {
+    font-size: 8px;
+  }
+  .copyright-date {
+    font-size: 10px;
+    width: 100px;
+    text-align: center;
+  }
+  .copyright-company-logo-con h1 {
+    transform: translateY(0px);
+    margin-left: 5px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 370px) {
+  .copyright-span {
+    font-size: 6px;
+  }
+  .copyright-date {
+    font-size: 7px;
+    width: 80px;
+    text-align: center;
+  }
+  .footer-last-child {
+    width: 90%;
+  }
 }/*# sourceMappingURL=footer.css.map */
