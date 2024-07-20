@@ -7,10 +7,14 @@
   list-style: none;
 }
 
+#techIntegrations-img-id {
+  width: 80%;
+  height: 80%;
+}
+
 .techIntegrations-info-con {
   width: 50%;
-  padding: 80px;
-  padding-left: 80px;
+  padding: 4%;
 }
 .techIntegrations-info-con h2 {
   width: 300px;

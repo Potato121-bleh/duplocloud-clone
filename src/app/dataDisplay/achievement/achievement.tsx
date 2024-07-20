@@ -74,6 +74,7 @@ export default function Achievement() {
                             <li key={element.id} className="achievement-child">
                                 <div className="achievement-img-con">
                                     <Image
+                                    id='achievement-img-id'
                                         width={60}
                                         height={60}
                                         src={`${element.imgUrl}`}

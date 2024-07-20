@@ -290,412 +290,430 @@ export default function Navbar() {
     ]
 
     return (
-        <nav className="navbar-main-con">
-            <li className="navbar-logo-con">
-                <Image
-                    id="logo"
-                    width={30}
-                    height={30}
-                    src="/Duplocloud_logo.png"
-                    alt="This is an logo image"
-                />
-                <h1 id="logo-title">DuploCloud</h1>
-            </li>
-            <ul className="navbar-list-con">
-                <li className="navbar-list-child navbar-first-child">
-                    <p className="navbar-p">Platform</p>
-                    <FontAwesomeIcon
-                        className="navbar-arrow-icon"
-                        icon={faChevronDown}
+        <>
+            <nav className="navbar-main-con">
+                <li className="navbar-logo-con">
+                    <Image
+                        id="logo"
+                        width={30}
+                        height={30}
+                        src="/Duplocloud_logo.png"
+                        alt="This is an logo image"
                     />
-                    <div className="navbar-subchild-con subchild-p">
-                        <div className="navbar-subchild-left-con">
-                            <div className="navbar-subchild-header">
-                                <Image
-                                    id="feature-icon"
-                                    width={23}
-                                    height={23}
-                                    src="/Feature.png"
-                                    alt="This is an feature icon"
-                                />
-                                <p className="navbar-list-subchild-header-title changecolor-title">
-                                    Features
-                                </p>
-                            </div>
-                            <div className="navbar-subchild-leftelement-con1">
-                                <ul className="navbar-subchild-element1 subchild-left">
-                                    {navProjectElements[0].map((element) => {
-                                        return (
-                                            <li
-                                                key={element.id}
-                                                className="navbar-subchild-text-con"
-                                            >
-                                                <NavElement
-                                                    title={`${element.title}`}
-                                                    unique={`${element.unique}`}
-                                                    description={`${element.description}`}
-                                                    descriptionSecond={`${element.descriptionSecond}`}
-                                                />
-                                            </li>
-                                        )
-                                    })}
-                                </ul>
-                                <ul className="navbar-subchild-element1 subchild-right">
-                                    {navProjectElements[1].map((element) => {
-                                        return (
-                                            <li
-                                                key={element.id}
-                                                className="navbar-subchild-text-con"
-                                            >
-                                                <NavElement
-                                                    title={`${element.title}`}
-                                                    unique={`${element.unique}`}
-                                                    description={`${element.description}`}
-                                                    descriptionSecond={`${element.descriptionSecond}`}
-                                                />
-                                            </li>
-                                        )
-                                    })}
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="navbar-subchild-right-con">
-                            <div className="navbar-subchild-header">
-                                <Image
-                                    id="feature-icon"
-                                    width={23}
-                                    height={23}
-                                    src="/For_team.png"
-                                    alt="This is an for_team icon"
-                                />
-                                <p className="navbar-list-subchild-header-title changecolor-title ">
-                                    For Teams
-                                </p>
-                            </div>
-                            <div>
-                                <ul className="navbar-subchild-element1 subchild-hard-right">
-                                    {navProjectElements[2].map((element) => {
-                                        return (
-                                            <li
-                                                key={element.id}
-                                                className="navbar-subchild-text-con"
-                                            >
-                                                <NavElement
-                                                    title={`${element.title}`}
-                                                    unique={`${element.unique}`}
-                                                    description={`${element.description}`}
-                                                    descriptionSecond={`${element.descriptionSecond}`}
-                                                />
-                                            </li>
-                                        )
-                                    })}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <h1 id="logo-title">DuploCloud</h1>
                 </li>
-
-                <li className="navbar-list-child">
-                    <p className="navbar-p">Use Cases</p>
-                    <FontAwesomeIcon
-                        className="navbar-arrow-icon"
-                        icon={faChevronDown}
-                    />
-                    <div className="navbar-subchild-con subchild-u">
-                        <div className="navbar-subchild-left-con">
-                            <ul className="navbar-subchild-header">
-                                <li className="navbar-subchild-headerleft">
+                <ul className="navbar-list-con">
+                    <li className="navbar-list-child navbar-first-child">
+                        <p className="navbar-p">Platform</p>
+                        <FontAwesomeIcon
+                            className="navbar-arrow-icon"
+                            icon={faChevronDown}
+                        />
+                        <div className="navbar-subchild-con subchild-p">
+                            <div className="navbar-subchild-left-con">
+                                <div className="navbar-subchild-header">
                                     <Image
                                         id="feature-icon"
                                         width={23}
                                         height={23}
-                                        src="/Business_case_icon.png"
-                                        alt="This is an business icon"
+                                        src="/Feature.png"
+                                        alt="This is an feature icon"
                                     />
                                     <p className="navbar-list-subchild-header-title changecolor-title">
-                                        Business Case
+                                        Features
                                     </p>
-                                </li>
-                                <li className="navbar-subchild-headerright">
+                                </div>
+                                <div className="navbar-subchild-leftelement-con1">
+                                    <ul className="navbar-subchild-element1 subchild-left">
+                                        {navProjectElements[0].map(
+                                            (element) => {
+                                                return (
+                                                    <li
+                                                        key={element.id}
+                                                        className="navbar-subchild-text-con"
+                                                    >
+                                                        <NavElement
+                                                            title={`${element.title}`}
+                                                            unique={`${element.unique}`}
+                                                            description={`${element.description}`}
+                                                            descriptionSecond={`${element.descriptionSecond}`}
+                                                        />
+                                                    </li>
+                                                )
+                                            }
+                                        )}
+                                    </ul>
+                                    <ul className="navbar-subchild-element1 subchild-right">
+                                        {navProjectElements[1].map(
+                                            (element) => {
+                                                return (
+                                                    <li
+                                                        key={element.id}
+                                                        className="navbar-subchild-text-con"
+                                                    >
+                                                        <NavElement
+                                                            title={`${element.title}`}
+                                                            unique={`${element.unique}`}
+                                                            description={`${element.description}`}
+                                                            descriptionSecond={`${element.descriptionSecond}`}
+                                                        />
+                                                    </li>
+                                                )
+                                            }
+                                        )}
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="navbar-subchild-right-con">
+                                <div className="navbar-subchild-header">
+                                    <Image
+                                        id="feature-icon"
+                                        width={23}
+                                        height={23}
+                                        src="/For_team.png"
+                                        alt="This is an for_team icon"
+                                    />
+                                    <p className="navbar-list-subchild-header-title changecolor-title ">
+                                        For Teams
+                                    </p>
+                                </div>
+                                <div>
+                                    <ul className="navbar-subchild-element1 subchild-hard-right">
+                                        {navProjectElements[2].map(
+                                            (element) => {
+                                                return (
+                                                    <li
+                                                        key={element.id}
+                                                        className="navbar-subchild-text-con"
+                                                    >
+                                                        <NavElement
+                                                            title={`${element.title}`}
+                                                            unique={`${element.unique}`}
+                                                            description={`${element.description}`}
+                                                            descriptionSecond={`${element.descriptionSecond}`}
+                                                        />
+                                                    </li>
+                                                )
+                                            }
+                                        )}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li className="navbar-list-child">
+                        <p className="navbar-p">Use Cases</p>
+                        <FontAwesomeIcon
+                            className="navbar-arrow-icon"
+                            icon={faChevronDown}
+                        />
+                        <div className="navbar-subchild-con subchild-u">
+                            <div className="navbar-subchild-left-con">
+                                <ul className="navbar-subchild-header">
+                                    <li className="navbar-subchild-headerleft">
+                                        <Image
+                                            id="feature-icon"
+                                            width={23}
+                                            height={23}
+                                            src="/Business_case_icon.png"
+                                            alt="This is an business icon"
+                                        />
+                                        <p className="navbar-list-subchild-header-title changecolor-title">
+                                            Business Case
+                                        </p>
+                                    </li>
+                                    <li className="navbar-subchild-headerright">
+                                        <Image
+                                            width={28}
+                                            height={23}
+                                            src="/Solutions_icon.png"
+                                            alt="This is an solutions icon"
+                                        />
+                                        <p className="navbar-list-subchild-header-title changecolor-title">
+                                            Solutions
+                                        </p>
+                                    </li>
+                                </ul>
+                                <div className="navbar-subchild-leftelement-con1">
+                                    <ul className="navbar-subchild-element1 subchild-left">
+                                        {navUsecaseElements[0].map(
+                                            (element) => {
+                                                return (
+                                                    <li
+                                                        key={element.id}
+                                                        className="navbar-subchild-text-con"
+                                                    >
+                                                        <NavElement
+                                                            title={`${element.title}`}
+                                                            unique={`${element.unique}`}
+                                                            description={`${element.description}`}
+                                                            descriptionSecond={`${element.descriptionSecond}`}
+                                                        />
+                                                    </li>
+                                                )
+                                            }
+                                        )}
+                                    </ul>
+                                    <ul className="navbar-subchild-element1 subchild-right">
+                                        {navUsecaseElements[1].map(
+                                            (element) => {
+                                                return (
+                                                    <li
+                                                        key={element.id}
+                                                        className="navbar-subchild-text-con"
+                                                    >
+                                                        <NavElement
+                                                            title={`${element.title}`}
+                                                            unique={`${element.unique}`}
+                                                            description={`${element.description}`}
+                                                            descriptionSecond={`${element.descriptionSecond}`}
+                                                        />
+                                                    </li>
+                                                )
+                                            }
+                                        )}
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="navbar-subchild-right-con">
+                                <div className="navbar-subchild-header">
+                                    <Image
+                                        id="feature-icon"
+                                        width={23}
+                                        height={23}
+                                        src="/Platform_icon.png"
+                                        alt="This is an platform icon"
+                                    />
+                                    <p className="navbar-list-subchild-header-title changecolor-title ">
+                                        Platforms
+                                    </p>
+                                </div>
+                                <div>
+                                    <ul className="navbar-subchild-element1 subchild-hard-right">
+                                        {navUsecaseBlock.map((element) => {
+                                            return (
+                                                <li
+                                                    key={element.id}
+                                                    className="navbar-subchild-text-con  navbar-subchild-text-con-block"
+                                                >
+                                                    <NavBlock
+                                                        title={`${element.title}`}
+                                                        imageUrl={`${element.imageUrl}`}
+                                                    />
+                                                </li>
+                                            )
+                                        })}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li className="navbar-list-child">
+                        <p className="navbar-p">Why DuploCloud</p>
+                        <FontAwesomeIcon
+                            className="navbar-arrow-icon"
+                            icon={faChevronDown}
+                        />
+                        <div className="navbar-subchild-con subchild-w">
+                            <div className="navbar-subchild-left-con">
+                                <div className="navbar-subchild-header">
                                     <Image
                                         width={28}
                                         height={23}
-                                        src="/Solutions_icon.png"
-                                        alt="This is an solutions icon"
+                                        src="/company_icon.png"
+                                        alt="This is an feature icon"
                                     />
                                     <p className="navbar-list-subchild-header-title changecolor-title">
-                                        Solutions
+                                        Company
                                     </p>
-                                </li>
-                            </ul>
-                            <div className="navbar-subchild-leftelement-con1">
-                                <ul className="navbar-subchild-element1 subchild-left">
-                                    {navUsecaseElements[0].map((element) => {
-                                        return (
-                                            <li
-                                                key={element.id}
-                                                className="navbar-subchild-text-con"
-                                            >
-                                                <NavElement
-                                                    title={`${element.title}`}
-                                                    unique={`${element.unique}`}
-                                                    description={`${element.description}`}
-                                                    descriptionSecond={`${element.descriptionSecond}`}
-                                                />
-                                            </li>
-                                        )
-                                    })}
-                                </ul>
-                                <ul className="navbar-subchild-element1 subchild-right">
-                                    {navUsecaseElements[1].map((element) => {
-                                        return (
-                                            <li
-                                                key={element.id}
-                                                className="navbar-subchild-text-con"
-                                            >
-                                                <NavElement
-                                                    title={`${element.title}`}
-                                                    unique={`${element.unique}`}
-                                                    description={`${element.description}`}
-                                                    descriptionSecond={`${element.descriptionSecond}`}
-                                                />
-                                            </li>
-                                        )
-                                    })}
-                                </ul>
+                                </div>
+                                <div className="navbar-subchild-leftelement-con1">
+                                    <ul className="navbar-subchild-element1 subchild-left">
+                                        {navWhydupElement[0].map((element) => {
+                                            return (
+                                                <li
+                                                    key={element.id}
+                                                    className="navbar-subchild-text-con"
+                                                >
+                                                    <NavElement
+                                                        title={`${element.title}`}
+                                                        unique={`${element.unique}`}
+                                                        description={`${element.description}`}
+                                                        descriptionSecond={`${element.descriptionSecond}`}
+                                                    />
+                                                </li>
+                                            )
+                                        })}
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="navbar-subchild-right-con">
+                                <div className="navbar-subchild-header">
+                                    <Image
+                                        width={26}
+                                        height={23}
+                                        src="/customer_icon.png"
+                                        alt="This is an for_team icon"
+                                    />
+                                    <p className="navbar-list-subchild-header-title changecolor-title ">
+                                        Customer Stories
+                                    </p>
+                                </div>
+                                <div>
+                                    <ul className="navbar-subchild-element1 subchild-hard-right">
+                                        {navWhydupElement[1].map((element) => {
+                                            return (
+                                                <li
+                                                    key={element.id}
+                                                    className="navbar-subchild-text-con"
+                                                >
+                                                    <NavElement
+                                                        title={`${element.title}`}
+                                                        unique={`${element.unique}`}
+                                                        description={`${element.description}`}
+                                                        descriptionSecond={`${element.descriptionSecond}`}
+                                                    />
+                                                </li>
+                                            )
+                                        })}
+                                        <li className="navbar-subchild-last-text-con">
+                                            <p className="navbar-subchild-last-txt">
+                                                All Customer Stories
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div className="navbar-subchild-right-con">
-                            <div className="navbar-subchild-header">
-                                <Image
-                                    id="feature-icon"
-                                    width={23}
-                                    height={23}
-                                    src="/Platform_icon.png"
-                                    alt="This is an platform icon"
-                                />
-                                <p className="navbar-list-subchild-header-title changecolor-title ">
-                                    Platforms
-                                </p>
-                            </div>
-                            <div>
-                                <ul className="navbar-subchild-element1 subchild-hard-right">
-                                    {navUsecaseBlock.map((element) => {
-                                        return (
-                                            <li
-                                                key={element.id}
-                                                className="navbar-subchild-text-con  navbar-subchild-text-con-block"
-                                            >
-                                                <NavBlock
-                                                    title={`${element.title}`}
-                                                    imageUrl={`${element.imageUrl}`}
-                                                />
-                                            </li>
-                                        )
-                                    })}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+                    </li>
+                    <li className="navbar-list-child">
+                        <p className="navbar-p">Pricing</p>
+                    </li>
 
-                <li className="navbar-list-child">
-                    <p className="navbar-p">Why DuploCloud</p>
-                    <FontAwesomeIcon
-                        className="navbar-arrow-icon"
-                        icon={faChevronDown}
-                    />
-                    <div className="navbar-subchild-con subchild-w">
-                        <div className="navbar-subchild-left-con">
-                            <div className="navbar-subchild-header">
-                                <Image
-                                    width={28}
-                                    height={23}
-                                    src="/company_icon.png"
-                                    alt="This is an feature icon"
-                                />
-                                <p className="navbar-list-subchild-header-title changecolor-title">
-                                    Company
-                                </p>
-                            </div>
-                            <div className="navbar-subchild-leftelement-con1">
-                                <ul className="navbar-subchild-element1 subchild-left">
-                                    {navWhydupElement[0].map((element) => {
-                                        return (
-                                            <li
-                                                key={element.id}
-                                                className="navbar-subchild-text-con"
-                                            >
-                                                <NavElement
-                                                    title={`${element.title}`}
-                                                    unique={`${element.unique}`}
-                                                    description={`${element.description}`}
-                                                    descriptionSecond={`${element.descriptionSecond}`}
-                                                />
-                                            </li>
-                                        )
-                                    })}
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="navbar-subchild-right-con">
-                            <div className="navbar-subchild-header">
-                                <Image
-                                    width={26}
-                                    height={23}
-                                    src="/customer_icon.png"
-                                    alt="This is an for_team icon"
-                                />
-                                <p className="navbar-list-subchild-header-title changecolor-title ">
-                                    Customer Stories
-                                </p>
-                            </div>
-                            <div>
-                                <ul className="navbar-subchild-element1 subchild-hard-right">
-                                    {navWhydupElement[1].map((element) => {
-                                        return (
-                                            <li
-                                                key={element.id}
-                                                className="navbar-subchild-text-con"
-                                            >
-                                                <NavElement
-                                                    title={`${element.title}`}
-                                                    unique={`${element.unique}`}
-                                                    description={`${element.description}`}
-                                                    descriptionSecond={`${element.descriptionSecond}`}
-                                                />
-                                            </li>
-                                        )
-                                    })}
-                                    <li className="navbar-subchild-last-text-con">
-                                        <p className="navbar-subchild-last-txt">
-                                            All Customer Stories
+                    <li className="navbar-list-child navbar-last-child">
+                        <p className="navbar-p">Resources</p>
+                        <FontAwesomeIcon
+                            className="navbar-arrow-icon"
+                            icon={faChevronDown}
+                        />
+                        <div className="navbar-subchild-con subchild-r">
+                            <div className="navbar-subchild-left-con">
+                                <ul className="navbar-subchild-header">
+                                    <li className="navbar-subchild-headerleft">
+                                        <Image
+                                            id="feature-icon"
+                                            width={23}
+                                            height={23}
+                                            src="/Learn_connect_icon.png"
+                                            alt="This is an business icon"
+                                        />
+                                        <p className="navbar-list-subchild-header-title changecolor-title">
+                                            Learn & Connect
+                                        </p>
+                                    </li>
+                                    <li className="navbar-subchild-headerright">
+                                        <Image
+                                            id="feature-icon"
+                                            width={23}
+                                            height={23}
+                                            src="/Product_help_icon.png"
+                                            alt="This is an solutions icon"
+                                        />
+                                        <p className="navbar-list-subchild-header-title changecolor-title">
+                                            Product Help
                                         </p>
                                     </li>
                                 </ul>
+                                <div className="navbar-subchild-leftelement-con1">
+                                    <ul className="navbar-subchild-element1 subchild-left">
+                                        {navResourcesElement[0].map(
+                                            (element) => {
+                                                return (
+                                                    <li
+                                                        key={element.id}
+                                                        className="navbar-subchild-text-con"
+                                                    >
+                                                        <NavElement
+                                                            title={`${element.title}`}
+                                                            unique={`${element.unique}`}
+                                                            description={`${element.description}`}
+                                                            descriptionSecond={`${element.descriptionSecond}`}
+                                                        />
+                                                    </li>
+                                                )
+                                            }
+                                        )}
+                                        <li className="navbar-subchild-last-text-con">
+                                            <p className="navbar-subchild-last-txt">
+                                                All Assets
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <ul className="navbar-subchild-element1 subchild-right">
+                                        {navResourcesElement[1].map(
+                                            (element) => {
+                                                return (
+                                                    <li
+                                                        key={element.id}
+                                                        className="navbar-subchild-text-con"
+                                                    >
+                                                        <NavElement
+                                                            title={`${element.title}`}
+                                                            unique={`${element.unique}`}
+                                                            description={`${element.description}`}
+                                                            descriptionSecond={`${element.descriptionSecond}`}
+                                                        />
+                                                    </li>
+                                                )
+                                            }
+                                        )}
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </li>
-                <li className="navbar-list-child">
-                    <p className="navbar-p">Pricing</p>
-                </li>
-
-                <li className="navbar-list-child navbar-last-child">
-                    <p className="navbar-p">Resources</p>
-                    <FontAwesomeIcon
-                        className="navbar-arrow-icon"
-                        icon={faChevronDown}
-                    />
-                    <div className="navbar-subchild-con subchild-r">
-                        <div className="navbar-subchild-left-con">
-                            <ul className="navbar-subchild-header">
-                                <li className="navbar-subchild-headerleft">
+                            <div className="navbar-subchild-right-con">
+                                <div className="navbar-subchild-header">
                                     <Image
                                         id="feature-icon"
                                         width={23}
                                         height={23}
-                                        src="/Learn_connect_icon.png"
-                                        alt="This is an business icon"
+                                        src="/In_the_world_icon.png"
+                                        alt="This is an platform icon"
                                     />
-                                    <p className="navbar-list-subchild-header-title changecolor-title">
-                                        Learn & Connect
+                                    <p className="navbar-list-subchild-header-title changecolor-title ">
+                                        In the World
                                     </p>
-                                </li>
-                                <li className="navbar-subchild-headerright">
-                                    <Image
-                                        id="feature-icon"
-                                        width={23}
-                                        height={23}
-                                        src="/Product_help_icon.png"
-                                        alt="This is an solutions icon"
-                                    />
-                                    <p className="navbar-list-subchild-header-title changecolor-title">
-                                        Product Help
-                                    </p>
-                                </li>
-                            </ul>
-                            <div className="navbar-subchild-leftelement-con1">
-                                <ul className="navbar-subchild-element1 subchild-left">
-                                    {navResourcesElement[0].map((element) => {
-                                        return (
-                                            <li
-                                                key={element.id}
-                                                className="navbar-subchild-text-con"
-                                            >
-                                                <NavElement
-                                                    title={`${element.title}`}
-                                                    unique={`${element.unique}`}
-                                                    description={`${element.description}`}
-                                                    descriptionSecond={`${element.descriptionSecond}`}
-                                                />
-                                            </li>
-                                        )
-                                    })}
-                                    <li className="navbar-subchild-last-text-con">
-                                        <p className="navbar-subchild-last-txt">
-                                            All Assets
-                                        </p>
-                                    </li>
-                                </ul>
-                                <ul className="navbar-subchild-element1 subchild-right">
-                                    {navResourcesElement[1].map((element) => {
-                                        return (
-                                            <li
-                                                key={element.id}
-                                                className="navbar-subchild-text-con"
-                                            >
-                                                <NavElement
-                                                    title={`${element.title}`}
-                                                    unique={`${element.unique}`}
-                                                    description={`${element.description}`}
-                                                    descriptionSecond={`${element.descriptionSecond}`}
-                                                />
-                                            </li>
-                                        )
-                                    })}
-                                </ul>
+                                </div>
+                                <div>
+                                    <ul className="navbar-subchild-element1 subchild-hard-right">
+                                        {navResourcesElement[2].map(
+                                            (element) => {
+                                                return (
+                                                    <li
+                                                        key={element.id}
+                                                        className="navbar-subchild-text-con"
+                                                    >
+                                                        <NavElement
+                                                            title={`${element.title}`}
+                                                            unique={`${element.unique}`}
+                                                            description={`${element.description}`}
+                                                            descriptionSecond={`${element.descriptionSecond}`}
+                                                        />
+                                                    </li>
+                                                )
+                                            }
+                                        )}
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div className="navbar-subchild-right-con">
-                            <div className="navbar-subchild-header">
-                                <Image
-                                    id="feature-icon"
-                                    width={23}
-                                    height={23}
-                                    src="/In_the_world_icon.png"
-                                    alt="This is an platform icon"
-                                />
-                                <p className="navbar-list-subchild-header-title changecolor-title ">
-                                    In the World
-                                </p>
-                            </div>
-                            <div>
-                                <ul className="navbar-subchild-element1 subchild-hard-right">
-                                    {navResourcesElement[2].map((element) => {
-                                        return (
-                                            <li
-                                                key={element.id}
-                                                className="navbar-subchild-text-con"
-                                            >
-                                                <NavElement
-                                                    title={`${element.title}`}
-                                                    unique={`${element.unique}`}
-                                                    description={`${element.description}`}
-                                                    descriptionSecond={`${element.descriptionSecond}`}
-                                                />
-                                            </li>
-                                        )
-                                    })}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    </li>
+                </ul>
+                <li className="navbar-demo-con">
+                    <button className="navbar-btn">GET A DEMO</button>
                 </li>
-            </ul>
-            <li className="navbar-demo-con">
-                <button className="navbar-btn">GET A DEMO</button>
-            </li>
-        </nav>
+            </nav>
+        </>
     )
 }

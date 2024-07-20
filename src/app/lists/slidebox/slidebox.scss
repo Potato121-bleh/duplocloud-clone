@@ -6,7 +6,7 @@ $red: #D50000;
 
 
 .slidebox-main-con {
-    width:4000px;
+    width:100%;
     display:flex;
     list-style: none;
     padding:0;
@@ -141,8 +141,22 @@ $red: #D50000;
 
 /* ADD ON */
 .slidebox-increase-width {
-    width:935px;
+    width:70%;
     color: #013654; 
     background-color: white;
 }
 .slidebox-hidden-text {opacity: 0;}
+
+
+@media (max-width:1275px) {
+    .slidebox-child-mid-text-con {
+        margin-left:70px;
+    }
+    .line1 {
+        right: -30px;
+        top: 125px;
+    }
+    .line2 {
+        right: 80px;
+    }
+}

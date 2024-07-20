@@ -68,6 +68,7 @@ export default function Timeline() {
                         id="timeline-first-img-id"
                     >
                         <Image
+                            id="timeline-img-id"
                             className="timeline-img"
                             width={550}
                             height={300}
@@ -80,6 +81,7 @@ export default function Timeline() {
                         id="timeline-second-img-id"
                     >
                         <Image
+                            id="timeline-img-id"
                             className="timeline-img"
                             width={550}
                             height={300}
@@ -93,6 +95,7 @@ export default function Timeline() {
                         id="timeline-last-img-id"
                     >
                         <Image
+                            id="timeline-img-id"
                             className="timeline-img"
                             width={550}
                             height={300}

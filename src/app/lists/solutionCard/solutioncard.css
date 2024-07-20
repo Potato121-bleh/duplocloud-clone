@@ -98,4 +98,18 @@
 
 .fadeColorin {
   animation: fadeColorin 0.2s forwards ease-in-out;
+}
+
+@media (max-width: 1275px) {
+  .solutionCard-card-con {
+    padding-left: 10px;
+  }
+  .solutionCard-card-child {
+    width: 40%;
+  }
+}
+@media (max-width: 1175px) {
+  .solutionCard-card-child {
+    width: 38%;
+  }
 }/*# sourceMappingURL=solutioncard.css.map */

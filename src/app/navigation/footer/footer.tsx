@@ -64,6 +64,7 @@ export default function Footer() {
                         </li>
                         <li className="footer-lastchild-body-right">
                             <Image
+                                id="rate-us-img-id"
                                 width={120}
                                 height={70}
                                 src="/footer/rate-board.png"

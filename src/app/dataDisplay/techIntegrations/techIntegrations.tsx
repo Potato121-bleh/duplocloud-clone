@@ -24,6 +24,7 @@ export default function TechIntegrations() {
                 </li>
                 <li className="techIntegrations-img-con">
                     <Image
+                        id='techIntegrations-img-id'
                         width={650}
                         height={450}
                         src="/duplocloud-Integrations.png"

@@ -31,3 +31,12 @@
     display:inline-block;
     width:90%;
 }
+
+@media (max-width:1275px) {
+    .introSlidebox-text-middle {
+        width:80%;
+    }
+    .introSlidebox-text-bottom {
+        width:80%;
+    }
+}

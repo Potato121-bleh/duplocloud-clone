@@ -109,4 +109,11 @@
 .display {
   opacity: 1;
   visibility: visible;
+}
+
+@media (max-width: 1275px) {
+  #timeline-img-id {
+    width: 400px;
+    height: 250px;
+  }
 }/*# sourceMappingURL=timeline.css.map */

@@ -1,3 +1,11 @@
+#top-page-title-formobile {
+  border: solid red;
+  text-align: center;
+  font-weight: 400;
+  font-size: 35px;
+  display: none;
+}
+
 .footer-main-con {
   height: 530px;
   padding-top: 50px;
@@ -24,6 +32,7 @@
   font-weight: 450;
   font-size: 25px;
   color: #2E9CDF;
+  width: 275px;
 }
 
 .footer-firstchild-body {
@@ -192,7 +201,7 @@
 }
 
 .footer-lastchild-body-right {
-  margin-left: 20px;
+  width: 45%;
   cursor: pointer;
 }
 .footer-lastchild-body-right h5 {
@@ -306,4 +315,9 @@
 .copyright-span {
   text-decoration: underline;
   cursor: pointer;
+}
+
+#rate-us-img-id {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=footer.css.map */

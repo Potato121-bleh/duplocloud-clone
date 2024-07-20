@@ -25,7 +25,7 @@ $dd_subchild-font: 20px;
 .navbar-list-con {
     display:flex;
     padding:0;
-    width:633px;
+    width:760px;
     font-size: $h2_font;
     list-style: none;
     align-items: center;
@@ -263,7 +263,7 @@ $dd_subchild-font: 20px;
 
 /* for device responsive */
 
-@media (max-width:1280px) {
+@media (max-width:1275px) {
     .navbar-list-child {
         margin-left:10px;
         margin-right:10px;
@@ -272,6 +272,7 @@ $dd_subchild-font: 20px;
         font-size: 13.5px;
     }
     .navbar-list-con {
+        width: 633px;
         margin-left:11%;
     }
     .navbar-demo-con {
@@ -282,7 +283,7 @@ $dd_subchild-font: 20px;
     }
 }
 
-@media (max-width: 1147px) {
+@media (max-width: 1150px) {
     .navbar-list-con {
         margin-left:0%;
     }

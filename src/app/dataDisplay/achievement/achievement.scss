@@ -35,7 +35,7 @@
     justify-content: space-evenly;
 }
 .achievement-child {
-    width:240px;
+    width:20%;
     padding:20px;
     padding-top:30px;
     padding-bottom:30px;
@@ -61,6 +61,7 @@
 .achievement-img-con {
     display:inline-block;
     transform: translateY(-5px);
+    width: 25%;
 }
 
 .achievement-reward-con {
@@ -76,4 +77,29 @@
     padding:0;
     display:flex;
     justify-content: space-between;
+}
+#achievement-img-id {
+    width:100%;
+    height: 100%;
+}
+
+@media (max-width: 1190px) {
+    .achievement-bottom-con {
+        h1 {
+            font-size: 30px;
+        }
+        p {
+            width: 121px;
+            font-size: 12px;
+        }
+    }
+    .achivement-child {
+        padding: 12px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width:0%;
+    }
+    .achievement-main-con {
+        height: 610px;
+    }
 }

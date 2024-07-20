@@ -202,10 +202,10 @@ export default function Slidecard() {
                             safety of your business.
                         </p>
                     </li>
-                    <li className="slidebox-child-style line1">
+                    <li className="slidebox-child-style line1" id="line1-id">
                         <Line color="green-line" colorTop="green-top-line" />
                     </li>
-                    <li className="slidebox-child-style line2">
+                    <li className="slidebox-child-style line2" id="line2-id">
                         <Line color="green-line" colorTop="green-top-line" />
                     </li>
                 </ul>

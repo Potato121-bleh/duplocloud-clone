@@ -1,10 +1,12 @@
-
-
 body {
     overflow-X: hidden;
     margin:0;
     font-family: "Poppins", sans-serif;
     color:#013654;
+}
+.top-page-title-formobile {
+    text-align: center;
+    font-weight: 400;
 }
 .firstsection-main-con {
     padding:30px;
@@ -27,6 +29,7 @@ body {
 .firstsection-right-con {
     position:relative;
     width: 55%;
+    height:50%;
 }
 .firstsection-style-line-con {
     position:absolute;
@@ -40,6 +43,32 @@ body {
     height:100%;
 }
 
+
 .firstsection-extra-margin {
     margin-left:20px;
+}
+
+@media (max-width:1275px) {
+    .firstsection-style-line-con {transform: rotateZ(-145deg) translate(100px, 0px);}
+}
+
+
+@media (max-width:1030px) {
+    .firstsection-main-con {
+        position: relative;
+    }
+    .firstsection-left-con {
+        position: absolute;
+        bottom: -170px;
+        margin-left: 25%;
+    }
+    .top-page-title-formobile {
+        display:block;
+    }
+    #firstsection-title {
+        display:none;
+    }
+    .firstsection-right-con {
+        width: 100%;
+    }
 }

@@ -16,6 +16,7 @@ import Achievement from './dataDisplay/achievement/achievement'
 export default function Home() {
     return (
         <>
+            <h1 className="top-page-title-formobile">DevOps On Autopilot</h1>
             <section className="firstsection-main-con">
                 <li className="firstsection-left-con">
                     <h1 id="firstsection-title">DevOps on Autopilot</h1>
