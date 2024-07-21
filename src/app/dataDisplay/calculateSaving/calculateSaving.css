@@ -35,4 +35,33 @@
 .calculateSaving-btn-con {
   display: inline-block;
   text-align: center;
+}
+
+@media (max-width: 700px) {
+  .calculateSaving-con {
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .calculateSaving-title {
+    width: 390px;
+    font-size: 20px;
+    font-weight: 550;
+    text-align: center;
+  }
+  .calculateSaving-desc {
+    width: 316px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 400px) {
+  .calculateSaving-title {
+    width: 310px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .calculateSaving-desc {
+    width: 310px;
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=calculateSaving.css.map */

@@ -3,7 +3,8 @@
   justify-content: center;
   text-align: center;
 }
-.solutionCard-title-con .solutionCard-title {
+
+.solutionCard-title {
   width: 650px;
   font-size: 35px;
 }
@@ -111,5 +112,48 @@
 @media (max-width: 1175px) {
   .solutionCard-card-child {
     width: 38%;
+  }
+}
+@media (max-width: 935px) {
+  .solutionCard-card-con {
+    border: solid greenyellow;
+    justify-content: center;
+  }
+  .solutionCard-card-con li {
+    width: 500px;
+  }
+}
+@media (max-width: 500px) {
+  .solutionCard-title {
+    font-size: 24px;
+    width: 318px;
+  }
+  .solutionCard-card-con {
+    border: solid greenyellow;
+    justify-content: center;
+  }
+  .solutionCard-card-con li {
+    padding: 40px;
+    width: 500px;
+  }
+  .solutionCard-card-con li h3 {
+    font-size: 20px;
+  }
+  .solutionCard-card-con li p {
+    width: 280px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 400px) {
+  .solutionCard-card-con li {
+    padding: 25px;
+    width: 250px;
+  }
+  .solutionCard-card-con li h3 {
+    font-size: 16px;
+  }
+  .solutionCard-card-con li p {
+    width: 230px;
+    font-size: 10px;
   }
 }/*# sourceMappingURL=solutioncard.css.map */

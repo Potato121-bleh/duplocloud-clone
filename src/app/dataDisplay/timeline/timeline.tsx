@@ -159,7 +159,7 @@ export default function Timeline() {
                         src="/timeline_img/streamline-operations_img.png"
                         alt="This is an image of timeline"
                     />
-                    <li className="timeline-content-text timeline-content-text-first timeline-first-text-con">
+                    <div className="timeline-content-text timeline-content-text-first timeline-first-text-con">
                         <h1 className="timeline-h1-text">
                             Streamline Operations
                         </h1>
@@ -168,7 +168,7 @@ export default function Timeline() {
                             orchestration with DuploCloud's out-of-the-box
                             provisioning and deployment capabilities.
                         </p>
-                    </li>
+                    </div>
                 </li>
 
                 <li className="timeline-content-top">
@@ -180,7 +180,7 @@ export default function Timeline() {
                         src="/timeline_img/unbeatable-security-compliance_img.png"
                         alt="This is an image of timeline"
                     />
-                    <li className="timeline-content-text timeline-content-text-first timeline-first-text-con">
+                    <div className="timeline-content-text timeline-content-text-first timeline-first-text-con">
                         <h1 className="timeline-h1-text">
                             Unbeatable Security & Compliance
                         </h1>
@@ -191,7 +191,7 @@ export default function Timeline() {
                             like SOC 2, PCI-DSS, HIPAA, HITRUST, GDPR, NIST, and
                             others.
                         </p>
-                    </li>
+                    </div>
                 </li>
 
                 <li className="timeline-content-top">
@@ -203,7 +203,7 @@ export default function Timeline() {
                         src="/timeline_img/scalability-flexibility_img.png"
                         alt="This is an image of timeline"
                     />
-                    <li className="timeline-content-text timeline-content-text-first timeline-first-text-con">
+                    <div className="timeline-content-text timeline-content-text-first timeline-first-text-con">
                         <h1 className="timeline-h1-text">
                             Scalability & Flexibility
                         </h1>
@@ -215,7 +215,7 @@ export default function Timeline() {
                             and giving your team back 75% more time to focus on
                             what matters.
                         </p>
-                    </li>
+                    </div>
                 </li>
             </ul>
         </section>

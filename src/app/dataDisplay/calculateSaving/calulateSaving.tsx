@@ -5,10 +5,13 @@ export default function CalculateSaving() {
     return (
         <section className="calculateSaving-main-con">
             <div className="calculateSaving-con">
-                <h1 className="calculateSaving-title">
-                    How much can we accelerate your time-to-market and save you
-                    money?
-                </h1>
+                <div>
+                    <h1 className="calculateSaving-title">
+                        How much can we accelerate your time-to-market and save
+                        you money?
+                    </h1>
+                </div>
+
                 <div className="calculateSaving-desc-con">
                     <p className="calculateSaving-desc">
                         Check out our savings calculator! Simply input your

@@ -190,7 +190,17 @@ $red: #D50000;
         }
     }
 }
-
+@media  (max-width: 600px) {
+    .slidebox-company-con {
+        display: block;
+        padding:0;
+        margin-left:5%;
+        margin-right:5%;
+    }
+    .slidebox-company-child {
+        margin-right: 10px;
+    }
+}
 @media (max-width: 530px) {
     .slidebox-child {
         height: 320px;
@@ -221,5 +231,15 @@ $red: #D50000;
                 font-size: 9px;
             }
         }
+    }
+}
+
+@media (max-width:400px) {
+    #slidebox-company-img {
+        width: 45px;
+        height: 30px;
+    }
+    #slidebox-bottom-text {
+        font-size: 19px;
     }
 }

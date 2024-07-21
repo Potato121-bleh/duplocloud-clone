@@ -106,6 +106,10 @@
   margin-top: 0;
 }
 
+.timeline-content-con-mobile {
+  display: none;
+}
+
 /* ADD ON */
 .display {
   opacity: 1;
@@ -123,6 +127,7 @@
     display: none;
   }
   .timeline-content-con-mobile {
+    display: block;
     list-style: none;
     padding: 0;
   }
@@ -164,5 +169,11 @@
   .timeline-content-text p {
     font-size: 13px;
     width: auto;
+  }
+}
+@media (max-width: 400px) {
+  #timeline-title {
+    margin: 30px;
+    font-size: 20px;
   }
 }/*# sourceMappingURL=timeline.css.map */

@@ -232,7 +232,7 @@ export default function Slidecard() {
                 <h1 id="slidebox-bottom-text">
                     <span id="slidebox-span-one">Cloud Services</span> and{' '}
                     <span id="slidebox-span-two">On-Prem</span>
-                </h1>
+                </h1> 
                 <ul className="slidebox-company-con">
                     <ul className="slidebox-company-child">
                         <li className="slidebox-company-element">

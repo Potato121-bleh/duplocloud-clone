@@ -107,6 +107,9 @@ $light_blue: #70C0F1;
 .timeline-first-text-con {
     margin-top:0;
 }
+.timeline-content-con-mobile {
+    display:none;
+}
 
 /* ADD ON */
 
@@ -127,6 +130,7 @@ $light_blue: #70C0F1;
         display:none;
     }
     .timeline-content-con-mobile {
+        display:block;
         list-style:  none;
         padding: 0;
     }
@@ -173,4 +177,10 @@ $light_blue: #70C0F1;
             width:auto;
         }
     }
+}
+@media (max-width: 400px) {
+    #timeline-title{
+        margin: 30px;
+        font-size: 20px;
+    } 
 }
