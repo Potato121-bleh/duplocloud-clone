@@ -7,7 +7,7 @@ body {
 }
 .top-page-title-formobile {
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
 }
 .firstsection-main-con {
     padding:30px;
@@ -71,5 +71,30 @@ body {
     }
     .firstsection-right-con {
         width: 100%;
+    }
+}
+@media (max-width: 780px) {
+    .firstsection-left-con {
+        text-align: center;
+        bottom: -200px;
+        margin-left: 20%;
+        width: 60%;
+    }
+}
+@media (max-width: 600px) {
+    .firstsection-left-con {
+        bottom: -215px;
+        margin-left: 0%;
+        width: 85%;
+    }
+    .firstsection-left-btn-con {
+        button {
+            font-size: 10px;
+        }
+    }
+}
+@media (max-width:430px) {
+    .top-page-title-formobile {
+        font-size: 25px;
     }
 }
