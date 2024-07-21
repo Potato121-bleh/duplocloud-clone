@@ -147,6 +147,77 @@ export default function Timeline() {
                     </li>
                 </ul>
             </ul>
+
+            {/* UI FOR MOBILE */}
+            <ul className="timeline-content-con-mobile">
+                <li className="timeline-content-top">
+                    <Image
+                        id="timeline-img-id-mobile"
+                        className="timeline-img"
+                        width={550}
+                        height={300}
+                        src="/timeline_img/streamline-operations_img.png"
+                        alt="This is an image of timeline"
+                    />
+                    <li className="timeline-content-text timeline-content-text-first timeline-first-text-con">
+                        <h1 className="timeline-h1-text">
+                            Streamline Operations
+                        </h1>
+                        <p>
+                            Take the guesswork out of cloud infrastructure
+                            orchestration with DuploCloud's out-of-the-box
+                            provisioning and deployment capabilities.
+                        </p>
+                    </li>
+                </li>
+
+                <li className="timeline-content-top">
+                    <Image
+                        id="timeline-img-id-mobile"
+                        className="timeline-img"
+                        width={550}
+                        height={300}
+                        src="/timeline_img/unbeatable-security-compliance_img.png"
+                        alt="This is an image of timeline"
+                    />
+                    <li className="timeline-content-text timeline-content-text-first timeline-first-text-con">
+                        <h1 className="timeline-h1-text">
+                            Unbeatable Security & Compliance
+                        </h1>
+                        <p>
+                            Cloud infrastructure is automatically provisioned
+                            with the most stringent DevSecOp controls the first
+                            time that adhere to today’s compliance standards
+                            like SOC 2, PCI-DSS, HIPAA, HITRUST, GDPR, NIST, and
+                            others.
+                        </p>
+                    </li>
+                </li>
+
+                <li className="timeline-content-top">
+                    <Image
+                        id="timeline-img-id-mobile"
+                        className="timeline-img"
+                        width={550}
+                        height={300}
+                        src="/timeline_img/scalability-flexibility_img.png"
+                        alt="This is an image of timeline"
+                    />
+                    <li className="timeline-content-text timeline-content-text-first timeline-first-text-con">
+                        <h1 className="timeline-h1-text">
+                            Scalability & Flexibility
+                        </h1>
+                        <p>
+                            DuploCloud helps you save time and money through
+                            automation and orchestration. Our all-in-one
+                            solution eliminates the need for additional tools or
+                            services, giving you unbeatable value for your money
+                            and giving your team back 75% more time to focus on
+                            what matters.
+                        </p>
+                    </li>
+                </li>
+            </ul>
         </section>
     )
 }

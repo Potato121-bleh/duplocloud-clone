@@ -211,6 +211,7 @@ export default function Slidecard() {
                 </ul>
             </section>
 
+            {/* BOTTOM PART */}
             <section className="slidebox-bottom-con">
                 <ul className="slidebox-bottom-btn-con">
                     <li>

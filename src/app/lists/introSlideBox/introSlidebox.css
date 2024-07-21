@@ -45,4 +45,25 @@
   .introSlidebox-text-bottom {
     width: 80%;
   }
+}
+@media (max-width: 500px) {
+  .introSlidebox-text-top h1 {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .introSlidebox-text-middle {
+    width: 70%;
+  }
+  .introSlidebox-text-middle p {
+    font-size: 10px;
+  }
+  .introSlidebox-text-bottom {
+    width: 70%;
+  }
+  .introSlidebox-text-bottom p {
+    font-size: 10px;
+  }
+  .introSlidebox-text-bottom .introSlidebox-text {
+    margin-top: 15px;
+  }
 }/*# sourceMappingURL=introSlidebox.css.map */
