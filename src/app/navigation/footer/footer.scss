@@ -409,6 +409,10 @@ $hoverBlue: #003859;
     .copyright-span {
         font-size: 10px;
     }
+    #rate-us-img-id {
+        width:100px;
+        height: 60px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -433,6 +437,11 @@ $hoverBlue: #003859;
 }
 
 @media (max-width: 370px) {
+    .footer-header-mobile {
+        h1 {
+            font-size:18px;
+        }
+    }
     .copyright-span {
         font-size: 6px;
     }

@@ -13,3 +13,14 @@
 .blue {background-color: #0091EA;}
 
 .white {color: white;}
+
+@media (max-width:600px) {
+    .btn-template {
+        font-size: 10px;
+    }
+}
+@media (max-width:400px) {
+    .btn-template {
+        font-size: 8px;
+    }
+}

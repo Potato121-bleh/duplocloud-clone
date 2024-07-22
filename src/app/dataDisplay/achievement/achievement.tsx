@@ -74,7 +74,7 @@ export default function Achievement() {
                             <li key={element.id} className="achievement-child">
                                 <div className="achievement-img-con">
                                     <Image
-                                    id='achievement-img-id'
+                                        id="achievement-img-id"
                                         width={60}
                                         height={60}
                                         src={`${element.imgUrl}`}
@@ -95,6 +95,7 @@ export default function Achievement() {
                             return (
                                 <li key={element.id}>
                                     <Image
+                                    id='achievement-reward-img-id'
                                         width={150}
                                         height={190}
                                         src={`${element.imgUrl}`}

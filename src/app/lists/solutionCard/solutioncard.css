@@ -116,20 +116,18 @@
 }
 @media (max-width: 935px) {
   .solutionCard-card-con {
-    border: solid greenyellow;
     justify-content: center;
   }
   .solutionCard-card-con li {
     width: 500px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .solutionCard-title {
     font-size: 24px;
     width: 318px;
   }
   .solutionCard-card-con {
-    border: solid greenyellow;
     justify-content: center;
   }
   .solutionCard-card-con li {
@@ -145,6 +143,10 @@
   }
 }
 @media (max-width: 400px) {
+  .solutionCard-title {
+    font-size: 20px;
+    width: 318px;
+  }
   .solutionCard-card-con li {
     padding: 25px;
     width: 250px;

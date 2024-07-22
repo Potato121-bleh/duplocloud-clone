@@ -119,7 +119,7 @@ export default function Footer() {
                 <ul className="footer-last-child" id="footer-last-child-id">
                     <li className="footer-lastchild-header footer-header-mobile">
                         <h1>Headquarters</h1>
-                    </li>
+                    </li> 
                     <ul className="footer-lastchild-body">
                         <li className="footer-lastchild-body-left">
                             <h5>2150 N 1st St San Jose, CA 95131</h5>

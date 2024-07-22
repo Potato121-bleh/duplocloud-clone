@@ -493,6 +493,10 @@ export default function Navbar() {
         let platform = document.getElementById(
             'platform-child-body-id'
         ) as HTMLElement
+        let arrowicon = document.getElementById(
+            'navbar-arrow-icon-id-platform'
+        ) as HTMLElement
+        arrowicon.classList.toggle('spin-arrow')
         usecase.classList.toggle('clear-translate')
         whydup.classList.toggle('clear-translate')
         pricing.classList.toggle('clear-translate')
@@ -513,6 +517,10 @@ export default function Navbar() {
         let usecase = document.getElementById(
             'usecase-child-body-id'
         ) as HTMLElement
+        let arrowicon = document.getElementById(
+            'navbar-arrow-icon-id-usecase'
+        ) as HTMLElement
+        arrowicon.classList.toggle('spin-arrow')
         platform.classList.toggle('clear-translate')
         whydup.classList.toggle('clear-translate')
         pricing.classList.toggle('clear-translate')
@@ -534,6 +542,10 @@ export default function Navbar() {
         let whydup = document.getElementById(
             'whydup-child-body-id'
         ) as HTMLElement
+        let arrowicon = document.getElementById(
+            'navbar-arrow-icon-id-whydup'
+        ) as HTMLElement
+        arrowicon.classList.toggle('spin-arrow')
         usecase.classList.toggle('clear-translate')
         platform.classList.toggle('clear-translate')
         pricing.classList.toggle('clear-translate')
@@ -548,12 +560,16 @@ export default function Navbar() {
         let usecase = document.getElementById('usecase-menu-id') as HTMLElement
         let whydup = document.getElementById('whydup-menu-id') as HTMLElement
         let pricing = document.getElementById('pricing-menu-id') as HTMLElement
+        let arrowicon = document.getElementById(
+            'navbar-arrow-icon-id-resource'
+        ) as HTMLElement
         let platform = document.getElementById(
             'platform-menu-id'
         ) as HTMLElement
         let resource = document.getElementById(
             'resource-child-body-id'
         ) as HTMLElement
+        arrowicon.classList.toggle('spin-arrow')
         usecase.classList.toggle('clear-translate')
         whydup.classList.toggle('clear-translate')
         pricing.classList.toggle('clear-translate')
@@ -584,6 +600,7 @@ export default function Navbar() {
                     <li className="navbar-list-child navbar-first-child">
                         <p className="navbar-p">Platform</p>
                         <FontAwesomeIcon
+                            id="navbar-arrow-icon-id"
                             className="navbar-arrow-icon"
                             icon={faChevronDown}
                         />
@@ -683,6 +700,7 @@ export default function Navbar() {
                     <li className="navbar-list-child">
                         <p className="navbar-p">Use Cases</p>
                         <FontAwesomeIcon
+                            id="navbar-arrow-icon-id"
                             className="navbar-arrow-icon"
                             icon={faChevronDown}
                         />
@@ -791,6 +809,7 @@ export default function Navbar() {
                     <li className="navbar-list-child">
                         <p className="navbar-p">Why DuploCloud</p>
                         <FontAwesomeIcon
+                            id="navbar-arrow-icon-id"
                             className="navbar-arrow-icon"
                             icon={faChevronDown}
                         />
@@ -873,6 +892,7 @@ export default function Navbar() {
                     <li className="navbar-list-child navbar-last-child">
                         <p className="navbar-p">Resources</p>
                         <FontAwesomeIcon
+                            id="navbar-arrow-icon-id"
                             className="navbar-arrow-icon"
                             icon={faChevronDown}
                         />
@@ -1036,6 +1056,7 @@ export default function Navbar() {
                                 <li className="navbar-menu-child-header-mobile">
                                     <p className="navbar-p">Platform</p>
                                     <FontAwesomeIcon
+                                        id="navbar-arrow-icon-id-platform"
                                         className="navbar-arrow-icon"
                                         icon={faChevronDown}
                                     />
@@ -1105,6 +1126,7 @@ export default function Navbar() {
                                 <li className="navbar-menu-child-header-mobile">
                                     <p className="navbar-p">Use Cases</p>
                                     <FontAwesomeIcon
+                                        id="navbar-arrow-icon-id-usecase"
                                         className="navbar-arrow-icon"
                                         icon={faChevronDown}
                                     />
@@ -1191,6 +1213,7 @@ export default function Navbar() {
                                 <li className="navbar-menu-child-header-mobile">
                                     <p className="navbar-p">Why DuploCloud</p>
                                     <FontAwesomeIcon
+                                        id="navbar-arrow-icon-id-whydup"
                                         className="navbar-arrow-icon"
                                         icon={faChevronDown}
                                     />
@@ -1257,6 +1280,7 @@ export default function Navbar() {
                                 <li className="navbar-menu-child-header-mobile">
                                     <p className="navbar-p">Resources</p>
                                     <FontAwesomeIcon
+                                        id="navbar-arrow-icon-id-resource"
                                         className="navbar-arrow-icon"
                                         icon={faChevronDown}
                                     />
