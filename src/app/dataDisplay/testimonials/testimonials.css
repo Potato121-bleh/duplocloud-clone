@@ -73,13 +73,10 @@
 }
 
 .testimonials-content-text-con {
-  position: absolute;
   width: 510px;
   height: 300px;
-  margin-top: 12px;
-  right: 10px;
+  margin-top: 30px;
   background-color: white;
-  padding: 10px;
   padding-left: 50px;
   padding-right: 50px;
   border-radius: 20px;
@@ -108,5 +105,106 @@
   }
   .testimonials-title {
     margin-left: 75px;
+  }
+  .testimonials-content-text-con {
+    width: 510px;
+    height: 300px;
+    margin-top: 30px;
+    margin-right: 30px;
+    background-color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+  }
+  .testimonials-content-text-con p {
+    font-size: 18px;
+    font-weight: 550;
+  }
+}
+@media (max-width: 1000px) {
+  .testimonials-content-con {
+    height: 500px;
+    display: block;
+    overflow-y: visible;
+  }
+  .testimonials-content-child {
+    display: block;
+  }
+  .testimonials-content-text-con {
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .testimonials-content-text-con p {
+    font-size: 15px;
+  }
+  .testimonials-content-innercon {
+    display: flex;
+  }
+  .testimonials-info-content {
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+  }
+  .testimonials-info-content-bottomtext {
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  .testimonials-content-quote {
+    display: none;
+  }
+  #testimonials-img-id {
+    width: 150px;
+    height: 40px;
+  }
+}
+@media (max-width: 590px) {
+  .testimonials-title {
+    font-size: 25px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  .testimonials-content-con {
+    height: auto;
+  }
+  .testimonials-content-child {
+    width: 320px;
+    height: auto;
+  }
+  .testimonials-content-text-con {
+    width: 230px;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: auto;
+    display: inline-block;
+  }
+  .testimonials-content-text-con p {
+    font-size: 12px;
+  }
+  .testimonials-info-content-bottomtext {
+    margin-top: 10px;
+    margin-left: 0px;
+    width: 200px;
+  }
+  .testimonials-info-content-bottomtext h3 {
+    font-size: 14px;
+  }
+  .testimonials-info-content-bottomtext p {
+    width: 120px;
+    font-size: 10px;
+  }
+  #testimonials-img-id {
+    width: 120px;
+    height: 35px;
   }
 }/*# sourceMappingURL=testimonials.css.map */

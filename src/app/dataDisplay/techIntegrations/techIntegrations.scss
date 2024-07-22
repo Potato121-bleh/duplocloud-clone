@@ -27,3 +27,22 @@
     width:100%;
     right:0;
 }
+
+
+@media (max-width:780px) {
+    .techIntegrations-con {
+        display: block;
+        padding:4%;
+    }
+    .techIntegrations-info-con {
+        width: 85%;
+        h2 {
+            font-size: 25px;
+            width: 100%;
+        }
+        p {
+            width: 100%;
+            font-size: 15px;
+        }
+    }
+}

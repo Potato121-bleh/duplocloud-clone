@@ -30,4 +30,22 @@
   position: relative;
   width: 100%;
   right: 0;
+}
+
+@media (max-width: 780px) {
+  .techIntegrations-con {
+    display: block;
+    padding: 4%;
+  }
+  .techIntegrations-info-con {
+    width: 85%;
+  }
+  .techIntegrations-info-con h2 {
+    font-size: 25px;
+    width: 100%;
+  }
+  .techIntegrations-info-con p {
+    width: 100%;
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=techIntegrations.css.map */

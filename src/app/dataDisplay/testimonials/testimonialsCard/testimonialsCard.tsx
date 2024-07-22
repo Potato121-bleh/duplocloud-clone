@@ -20,6 +20,7 @@ export default function TestimonialsCard({
             <li className="testimonials-info-content">
                 <div className="testimonials-info-content-topimg">
                     <Image
+                    id='testimonials-img-id'
                         width={imgWidth}
                         height={50}
                         src={`${imgUrl}`}
