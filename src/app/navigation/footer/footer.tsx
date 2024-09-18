@@ -135,7 +135,6 @@ export default function Footer() {
                             />
                         </li>
                     </ul>
-
                     <ul className="footer-afterlastchild-con">
                         <li className="footer-afterlastchild-header">
                             <h1>Find us on social media</h1>
